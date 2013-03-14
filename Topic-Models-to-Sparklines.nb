@@ -1,0 +1,1753 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 8.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[     78617,       1744]
+NotebookOptionsPosition[     76533,       1671]
+NotebookOutlinePosition[     76892,       1687]
+CellTagsIndexPosition[     76849,       1684]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData["complist"], "Input",
+ CellChangeTimes->{{3.5526558689624453`*^9, 3.552655869498693*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"complist", "=", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+      "0", ",", "0.00342768669164354`", ",", "0.00503464769633257`", ",", "0",
+        ",", "0.000187`", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", 
+       ",", "0", ",", "0", ",", "0", ",", "0"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+      "0.0415627991238424`", ",", "0.0545451018506565`", ",", 
+       "0.0395873926886832`", ",", "0.0284671754269643`", ",", 
+       "0.0390903566779343`", ",", "0.0344695110117644`", ",", 
+       "0.0326128167712641`", ",", "0.0380630684019641`", ",", 
+       "0.0358499768032886`", ",", "0.0241216221583061`", ",", 
+       "0.0421644617338612`", ",", "0.013010650199335`", ",", 
+       "0.0249861212092993`", ",", "0.0052690153372215`"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+      "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", 
+       "0.199956869995131`", ",", "0", ",", "0.00012`", ",", "0.000133`", ",",
+        "2.55`*^-6", ",", "0.000163`", ",", "0.000263`"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+      "0", ",", "0.00085`", ",", "0.00234340543856465`", ",", "2.58`*^-6", 
+       ",", "0.00113813994196456`", ",", "0.000276`", ",", 
+       "0.00326226841883004`", ",", "0.0136021043079029`", ",", 
+       "0.00442520380663783`", ",", "0.0016616611492715`", ",", "0.000403`", 
+       ",", "0", ",", "0.128977124171302`", ",", "0.00382965986312563`"}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+      "0.0182432511788783`", ",", "0.0153210214876468`", ",", 
+       "0.0161655849583081`", ",", "0.00690840218135165`", ",", 
+       "0.0157677946337962`", ",", "0.0155492265181596`", ",", 
+       "0.0244223588980269`", ",", "0.0270170881666664`", ",", 
+       "0.0225730014440221`", ",", "0.0288058332884705`", ",", 
+       "0.0295801137411838`", ",", "0.061203806696065`", ",", 
+       "0.0437452319638399`", ",", "0.0507734401248714`"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+      "0.000385`", ",", "0.000307`", ",", "0", ",", "0", ",", "0", ",", 
+       "0.000336`", ",", "0.00802923431352463`", ",", "0.000139`", ",", 
+       "0.000208`", ",", "0", ",", "0", ",", "4.43`*^-7", ",", "0", ",", 
+       "0"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+      "0", ",", "0.000241`", ",", "0", ",", "1.41`*^-6", ",", "0", ",", "0", 
+       ",", "0", ",", "0", ",", "0", ",", "0.150548900654233`", ",", 
+       "0.0000867`", ",", "0", ",", "0.000224`", ",", "0"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+      "0.0602743718032286`", ",", "0.0474997597520061`", ",", 
+       "0.0564744169757092`", ",", "0.060854234283426`", ",", 
+       "0.0644049544569521`", ",", "0.0677180178088576`", ",", 
+       "0.0853233878689306`", ",", "0.0668703874127514`", ",", 
+       "0.0756713553056169`", ",", "0.0537159237231518`", ",", 
+       "0.0700926497509473`", ",", "0.0781095052173989`", ",", 
+       "0.081629734159972`", ",", "0.117074442199532`"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+      "0.172483432576385`", ",", "0.159200472513734`", ",", 
+       "0.149704863560332`", ",", "0.199755469922789`", ",", 
+       "0.168275832383591`", ",", "0.169271657972465`", ",", 
+       "0.185503593663111`", ",", "0.190379953106609`", ",", 
+       "0.168390978281604`", ",", "0.140569578751071`", ",", 
+       "0.175902594476847`", ",", "0.205091688988101`", ",", 
+       "0.182253533569959`", ",", "0.224022169891154`"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+      "0", ",", "0", ",", "0", ",", "9.37`*^-7", ",", "0.173629161821008`", 
+       ",", "0", ",", "0.000388`", ",", "0", ",", "0", ",", "0", ",", 
+       "0.0000171`", ",", "2.44`*^-6", ",", "0.000155`", ",", "0.000124`"}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+      "0", ",", "0", ",", "0", ",", "1.29`*^-6", ",", "0", ",", "0", ",", "0",
+        ",", "0.000175`", ",", "0.194643108706161`", ",", "0.0000743`", ",", 
+       "0.0000295`", ",", "0", ",", "0", ",", "0.000108`"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+      "0.000617`", ",", "0", ",", "0.00441197684714154`", ",", "0", ",", "0", 
+       ",", "0.00118064355635489`", ",", "0", ",", "0", ",", "0", ",", "0", 
+       ",", "0", ",", "0", ",", "0", ",", "0"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+      "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", 
+       "0.168560402389922`", ",", "0", ",", "0", ",", "0", ",", "0.0000222`", 
+       ",", "0", ",", "0.000111`", ",", "0.0000723`"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+      "0.0218916444984702`", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0",
+        ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", 
+       ",", "0"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+      "0.00763151172418653`", ",", "0.00602437173756045`", ",", 
+       "0.00589922974900241`", ",", "0", ",", "0.00287520906292886`", ",", 
+       "0.00285523367406656`", ",", "0.0020092736995706`", ",", 
+       "0.00258591230554`", ",", "0.00435057683917966`", ",", 
+       "0.0173637765282861`", ",", "0.00263044226375467`", ",", "6.64`*^-7", 
+       ",", "0.000613`", ",", "0"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+      "0.0209751877690279`", ",", "0.016910560186972`", ",", 
+       "0.021187508856956`", ",", "0.0521827746960679`", ",", 
+       "0.0215009564641114`", ",", "0.02563297865619`", ",", 
+       "0.0208108842627242`", ",", "0.0240684726587026`", ",", 
+       "0.0222189617576736`", ",", "0.0183340496680296`", ",", 
+       "0.0102658868690309`", ",", "0.00894480817587124`", ",", 
+       "0.0219672902273018`", ",", "0.0172348504823046`"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+      "0", ",", "0", ",", "0", ",", "2.93`*^-6", ",", "0.000153`", ",", "0", 
+       ",", "0", ",", "0", ",", "0", ",", "0", ",", "0.0000718`", ",", 
+       "0.189005866647421`", ",", "0.000516`", ",", "0.000133`"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+      "0.0353417572479726`", ",", "0.0345687319967295`", ",", 
+       "0.0370175036513323`", ",", "0.0133269946190031`", ",", 
+       "0.0435605127873028`", ",", "0.052014138300888`", ",", 
+       "0.0617327351560181`", ",", "0.0569662195145231`", ",", 
+       "0.0645225150340215`", ",", "0.0643726893793305`", ",", 
+       "0.0829366494245533`", ",", "0.0686368194250108`", ",", 
+       "0.0680453529033236`", ",", "0.0227823454463182`"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+      "0", ",", "0.00130503156223181`", ",", "0", ",", "0", ",", "0", ",", 
+       "0", ",", "0", ",", "0.00238305863478011`", ",", "0.0040637598780872`",
+        ",", "0", ",", "0", ",", "0", ",", "0", ",", "0"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+      "0", ",", "0", ",", "0.0307772761243821`", ",", "0", ",", "0", ",", "0",
+        ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", 
+       ",", "0"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+      "0.00122035187240515`", ",", "0.0436412989311584`", ",", 
+       "0.00898856782682784`", ",", "0", ",", "0.00662467246969387`", ",", 
+       "0.0526849927944909`", ",", "0.00127172608719285`", ",", "0.000388`", 
+       ",", "0.00110225784572014`", ",", "0.000818`", ",", "0.0000486`", ",", 
+       "2.88`*^-6", ",", "0.0000275`", ",", "0"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+      "0.0029972943055629`", ",", "0.00156144473437714`", ",", 
+       "0.00381538978320398`", ",", "0.0067903418701011`", ",", 
+       "0.00245155731281088`", ",", "0.00292331870982441`", ",", "0.000222`", 
+       ",", "0.000151`", ",", "0.000595`", ",", "0", ",", "0", ",", "0", ",", 
+       "0", ",", "0"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+      "0", ",", "0", ",", "0", ",", "0.0139369728937976`", ",", "0", ",", "0",
+        ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", 
+       ",", "0"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+      "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0.133026089393577`", 
+       ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", 
+       ",", "0"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+      "0", ",", "0.172131500269011`", ",", "0", ",", "0", ",", "0.000142`", 
+       ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", 
+       "7.75`*^-7", ",", "0.000084`", ",", "0"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+      "0", ",", "0", ",", "0", ",", "8.2`*^-7", ",", "0", ",", "0", ",", "0", 
+       ",", "0", ",", "0.02797147340328`", ",", "0", ",", "0", ",", "0", ",", 
+       "0", ",", "0"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+      "0", ",", "0", ",", "0", ",", "2.81`*^-6", ",", "0", ",", "0", ",", 
+       "0.00023`", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", 
+       "0.00213846794864907`", ",", "0.244145022346169`"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+      "0.183338691870878`", ",", "0", ",", "0", ",", "3.87`*^-6", ",", "0", 
+       ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", 
+       "1.77`*^-6", ",", "0.0000289`", ",", "0.0000841`"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+      "0.00683709018198474`", ",", "0.00212466184119373`", ",", 
+       "0.00303001337112089`", ",", "0", ",", "0.00968194514514483`", ",", 
+       "0.00762741001694959`", ",", "0.00250833085951056`", ",", 
+       "0.0190875444699509`", ",", "0.00304801475704441`", ",", 
+       "0.00212888199717055`", ",", "0.000945`", ",", "0", ",", "0.000218`", 
+       ",", "0.000899`"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+      "0.0021665374745286`", ",", "0", ",", "0.00155612045682887`", ",", "0", 
+       ",", "0", ",", "0.00117668293100609`", ",", "0", ",", "0", ",", 
+       "0.00153365237823285`", ",", "0", ",", "0", ",", "0", ",", "0", ",", 
+       "0"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+      "0.000269`", ",", "0", ",", "0", ",", "0", ",", "0.000362`", ",", 
+       "0.000335`", ",", "0.000494`", ",", "0.00106692220215595`", ",", 
+       "0.000442`", ",", "0.000428`", ",", "0.0000224`", ",", "1.22`*^-6", 
+       ",", "0", ",", "0.0312439576952032`"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+      "0.241221357515753`", ",", "0.164333195316156`", ",", 
+       "0.172221850227859`", ",", "0.252319481040603`", ",", 
+       "0.188238070179997`", ",", "0.183194199079513`", ",", 
+       "0.209946356372637`", ",", "0.183117917559177`", ",", 
+       "0.180615966702733`", ",", "0.144936778682585`", ",", 
+       "0.172033097052521`", ",", "0.218526611551476`", ",", 
+       "0.218468282933923`", ",", "0.245169797239712`"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+      "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", 
+       "0", ",", "0", ",", "0", ",", "0", ",", "0.0448793380686985`", ",", 
+       "0", ",", "0"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+      "0.0115083769356799`", ",", "0.00539002784647049`", ",", 
+       "0.0158185433764601`", ",", "0.0136277673167128`", ",", 
+       "0.00756737032281682`", ",", "0.00175059640416711`", ",", 
+       "0.0385989940251954`", ",", "0.00538894306944245`", ",", 
+       "0.00656522465152811`", ",", "0.00310003768479449`", ",", 
+       "0.00151644564122213`", ",", "7.75`*^-7", ",", "0.00205609061029669`", 
+       ",", "0.00125328387494984`"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+      "0.112381378127771`", ",", "0.229262807670723`", ",", 
+       "0.202367548844671`", ",", "0.0337472120256608`", ",", 
+       "0.159530574471773`", ",", "0.149786135661225`", ",", 
+       "0.111278206806009`", ",", "0.128303583209758`", ",", 
+       "0.127412589510956`", ",", "0.259358581851462`", ",", 
+       "0.126318436289327`", ",", "0.0646404903273539`", ",", 
+       "0.0790041654280219`", ",", "0.00730626079453828`"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+      "0.00249850988613475`", ",", "0.00176835901589962`", ",", 
+       "0.00184224685726173`", ",", "0", ",", "0.0386793078402912`", ",", 
+       "0.000707`", ",", "0.000404`", ",", "0.00019`", ",", "0.000176`", ",", 
+       "0.0000973`", ",", "0", ",", "0", ",", "0", ",", "0.000147`"}], "}"}], 
+     ",", 
+     RowBox[{"{", 
+      RowBox[{
+      "0", ",", "0", ",", "0", ",", "1.41`*^-6", ",", "0", ",", "0", ",", "0",
+        ",", "0", ",", "0", ",", "0.000139`", ",", "0", ",", "0", ",", 
+       "0.106593171754363`", ",", "0.000114`"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+      "0.0022729741791895`", ",", "0.00251597063868508`", ",", 
+       "0.00204169238596813`", ",", "3.51`*^-6", ",", "0.00136208400209557`", 
+       ",", "0.00101316568446301`", ",", "0.00463049449975122`", ",", 
+       "0.00300588443466234`", ",", "0.00660263555949669`", ",", 
+       "0.00463831864038204`", ",", "0.130109217789887`", ",", "9.96`*^-7", 
+       ",", "0.0203235638585545`", ",", "0.00111894068258395`"}], "}"}], ",", 
+     
+     RowBox[{"{", 
+      RowBox[{
+      "0.00412589039808796`", ",", "0.00266335247067469`", ",", 
+       "0.0046085595213689`", ",", "0.0191572765969209`", ",", 
+       "0.0103551345622659`", ",", "0.0178007477283456`", ",", 
+       "0.00753134786408051`", ",", "0.00631678359247348`", ",", 
+       "0.00671467343492343`", ",", "0.00536536158427935`", ",", 
+       "0.050866451672414`", ",", "5.53`*^-7", ",", "0.00202624374857481`", 
+       ",", "0.0214705532277773`"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+      "0.00732908467370177`", ",", "0", ",", "0", ",", "0", ",", "0", ",", 
+       "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", 
+       "0", ",", "0"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+      "0", ",", "0.000274`", ",", "0.159196498538115`", ",", "0", ",", 
+       "0.000175`", ",", "0", ",", "0.000169`", ",", "0", ",", "0", ",", 
+       "0.000197`", ",", "0", ",", "1.44`*^-6", ",", "0", ",", "0"}], "}"}], 
+     ",", 
+     RowBox[{"{", 
+      RowBox[{
+      "0", ",", "0", ",", "0", ",", "0.231790104695369`", ",", "0", ",", "0", 
+       ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "3.32`*^-7", 
+       ",", "0", ",", "0"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+      "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", 
+       "0", ",", "0", ",", "0", ",", "0.0804317091688308`", ",", "0", ",", 
+       "0", ",", "0"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+      "0", ",", "0", ",", "0", ",", "0", ",", "0.000273`", ",", 
+       "0.00232318966887852`", ",", "0.000385`", ",", "0.00127250296466339`", 
+       ",", "0.000703`", ",", "0.000158`", ",", "0.0000583`", ",", 
+       "0.0214890133603179`", ",", "0", ",", "0.000164`"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+      "0.0363503367804145`", ",", "0.0331158726665565`", ",", 
+       "0.0461689360885233`", ",", "0.028835176913025`", ",", 
+       "0.0434172273670112`", ",", "0.039375405610471`", ",", 
+       "0.0291833039958858`", ",", "0.0286250234162782`", ",", 
+       "0.0389971694361455`", ",", "0.0238077881320256`", ",", 
+       "0.0232466970354918`", ",", "0.0264399276047229`", ",", 
+       "0.0155432904851786`", ",", "0.00496241152810234`"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+      "0.00527338818126831`", ",", "0.000363`", ",", "0.000937`", ",", "0", 
+       ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", 
+       ",", "0", ",", "0", ",", "0"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+      "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0.0363694795719432`",
+        ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", 
+       ",", "0"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+      "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", 
+       "0.000316`", ",", "0", ",", "0.0548132837576771`", ",", "0", ",", "0", 
+       ",", "0", ",", "0"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+      "0", ",", "0", ",", "0.00591068116691857`", ",", "0", ",", "0", ",", 
+       "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", 
+       "0", ",", "0"}], "}"}]}], "}"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.552655927915876*^9, 3.552655931846507*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"keys", "=", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+      "0", ",", 
+       "\"\<faculties shawnee pichon foe plaidoyer allemandes godard outport \
+extemes allemand manchettes malgre showdown furieux strikebreakers phosphates \
+alabama dthp oiicers \>\""}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+      "1", ",", 
+       "\"\<permission copyright owner reproduction prohibited reproduced du \
+qui great toronto men faire opposition au nac plans range sa dans \>\""}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+      "2", ",", 
+       "\"\<la de canadian technology france nac japanese gun telephone les \
+military company city division control government laurier native land \>\""}],
+       "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+      "3", ",", 
+       "\"\<defence les canadian military young bay war american ships club \
+tis vol public federal civil columbia censorship ship pour \>\""}], "}"}], 
+     ",", 
+     RowBox[{"{", 
+      RowBox[{
+      "4", ",", 
+       "\"\<british toronto canada field fonds modern officers international \
+james politics box chinese star jones space argues postwar centre election \>\
+\""}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+      "5", ",", 
+       "\"\<ontariens illinois platforms lafontaine laics moncton accident \
+reglements chaloupe stations dfait decorations chiang iq docteur tenants fum \
+ranching sec \>\""}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+      "6", ",", 
+       "\"\<canadian family museum sa enfants les champlain canada lac \
+aircraft elle jeunes indian insurance cour hamat indigenous german archives \
+\>\""}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+      "7", ",", 
+       "\"\<toronto history time canada change years act west south western \
+association archives community national ofthe immigrants women living press \
+\>\""}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+      "8", ",", 
+       "\"\<permission canadian copyright reproduced ofthe reproduction \
+canada prohibited owner press university war british social history north \
+early land de \>\""}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+      "9", ",", 
+       "\"\<women ofthe funher forest ia city french toronto children church \
+canadian hockey family white black ot american housing labour \>\""}], "}"}], 
+     ",", 
+     RowBox[{"{", 
+      RowBox[{
+      "10", ",", 
+       "\"\<la ofthe dc labour history der education canada law est church \
+news rights students yiddish pas nous cree und \>\""}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+      "11", ",", 
+       "\"\<gallagher hirroire cloutier oiiicials cordages doty vidler \
+charteris nazaire foo guenet axial cyclic plae ouvnge fmds valladolid camsell \
+iontreal \>\""}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+      "12", ",", 
+       "\"\<women ofthe school education alberta canadian le nurses labour \
+edmonton pilotes chinese eaton schools nursing children french macdonald \
+medical \>\""}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+      "13", ",", 
+       "\"\<dollard bryden seattle stock narrators chiefs telephone vessel \
+theological hanlan elder agency court festival urbaine amateur lee brigus \
+cipo \>\""}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+      "14", ",", 
+       "\"\<texte pratiques pourtant iohn literary juge bulletin frais \
+rapports ccf xvii gion religieux colonie principe secular aller grands avril \
+\>\""}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+      "15", ",", 
+       "\"\<leur disease wife intemational simply required bay met progress \
+mg scientists clark ms female provided relation nous site emigration \>\""}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+      "16", ",", 
+       "\"\<quebec french labour france party government lac king arts people \
+council de political bay irish bc committee policy park \>\""}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+      "17", ",", 
+       "\"\<de la le canada history des cultural est qu les university \
+british canadians en du world par ofthe aboriginal \>\""}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+      "18", ",", 
+       "\"\<cullen interception rearmament cruise johan cummings ecrits \
+berkes ldem htmters bonn gouvernements revolutionaries gese mclin pascale ilp \
+nomadisme ordnance \>\""}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+      "19", ",", 
+       "\"\<army seattle sant ouvrier foumeau inflation warfare fer training \
+jones battle anc cor famine missionnaires administration zin administering \
+coal \>\""}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+      "20", ",", 
+       "\"\<funher pp ln quebec land owner class copyright northem hudson \
+indians fo cultural agriculture fort columbia street reproduction nous \
+\>\""}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+      "21", ",", 
+       "\"\<shortly lhe deletion fth tind witl dib endings govemrnent \
+amounted diicult ymca volutionnaire heure emergent enally uni quartier gidney \
+\>\""}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+      "22", ",", 
+       "\"\<florists wine liberty collections currie mlbid liquidation \
+transfer vith nes lb trudeau dependents intra ure protests papua zalm takaki \
+\>\""}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+      "23", ",", 
+       "\"\<ofthe women permission children german ia city italian elizabeth \
+trade saskatchewan heame london art family reproduced canadian ot native \
+\>\""}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+      "24", ",", 
+       "\"\<canada nuclear funher defence british permission canadian \
+government brother ia weapons barbeau society policy education court pp state \
+upper \>\""}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+      "25", ",", 
+       "\"\<alex macedonians northem zu courts films migration nurses \
+physician nac lieutenant boom uranium ministry atomic caleb postwar fort eine \
+\>\""}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+      "26", ",", 
+       "\"\<women education irish toronto british land local people river \
+history indigenous city nations cultural ontario french american command \
+canada \>\""}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+      "27", ",", 
+       "\"\<funher newfoundland pp social le women church god toronto \
+lacrosse farm qu reproduced family est community mcnaughton land permission \
+\>\""}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+      "28", ",", 
+       "\"\<bureau baptiste pp francais paper tile companies preservation \
+trading pulp universities managers valley ouvrage southem beaver ch revue \
+usage \>\""}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+      "29", ",", 
+       "\"\<inthis fli vihlliam lllf rtc beament helmcken scher zionists \
+wmdsor inten oontre ule tnit impresses iaissant roussin odices flil \>\""}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+      "30", ",", 
+       "\"\<net hay persons operational funher cleaning guiding jr gn \
+regiment migration paint settlers latin emigration carter printing township \
+myers \>\""}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+      "31", ",", 
+       "\"\<permission canada owner prohibited women reproduction canadian \
+reproduced people work copyright social de political public indian life men \
+university \>\""}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+      "32", ",", 
+       "\"\<workers art indigenous alliance smufu japanese evidence parish ee \
+emigration ussr garden oil reel cree insanity wounded engineering migration \
+\>\""}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+      "33", ",", 
+       "\"\<permission religious nac irish reproduced prohibited copyright \
+missionaries music policy church methodist police la labor welfare trade bom \
+executive \>\""}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+      "34", ",", 
+       "\"\<de la les des le en du une dans permission qui au pour qu il est \
+par sur reproduction \>\""}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+      "35", ",", 
+       "\"\<craft langue devoir ht fiom renewal township husbands woodsworth \
+capital jury medical houses tbr cent industry hunting gay technological \
+\>\""}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+      "36", ",", 
+       "\"\<education lac school solandt students newfoundland macedonian \
+bulgarian victoria al student pollution schools identity commission women \
+army irish www \>\""}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+      "37", ",", 
+       "\"\<canadian canada policy american nuclear national union japanese \
+british la people dans multiculturalism political une montreal ethnic film \
+united \>\""}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+      "38", ",", 
+       "\"\<qu workers art social aboriginal culture canadians labour white \
+collection world global york context human work south agreement store \>\""}],
+       "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+      "39", ",", 
+       "\"\<richmond ste buy innovations manson sealing pie treasurer \
+cincinnati bouchard beach incest stopped dirt moine adulthood lieux ceded cma \
+\>\""}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+      "40", ",", 
+       "\"\<ofthe funher ia de irish nous indian native forges ln ot french \
+pp disease iroquois black en medical city \>\""}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+      "41", ",", 
+       "\"\<de ofthe la permission women funher chinese british le \
+reproduction copyright reproduced ln prohibited les owner church des lodge \>\
+\""}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+      "42", ",", 
+       "\"\<art litt muir ukrainian oil bank bec qui organic eaton ukrainians \
+french crcs fao loyalists inuit labor cree rature \>\""}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+      "43", ",", 
+       "\"\<liquor bennett witnesses telegram histories seventeenth doubt \
+elites capitalism league employers russell revival ah liberals professors tax \
+conditions discours \>\""}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+      "44", ",", 
+       "\"\<permission prohibited copyright owner reproduction du reproduced \
+le de economic dans east production nova saint canadians elle une wages \
+\>\""}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+      "45", ",", 
+       "\"\<intervenors lmd permafrost priestley rorty condamner aupr exh \
+siede uth copyfiq somes wundt penseignement confr longhouses olmsted goulding \
+albiny \>\""}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+      "46", ",", 
+       "\"\<sport ka mother st gallery vads tourism australian northem woman \
+savage artist prairie reel pulp mus retailers germans jews \>\""}], "}"}], 
+     ",", 
+     RowBox[{"{", 
+      RowBox[{
+      "47", ",", 
+       "\"\<japanese parents wheat germany histoire enfant woolverton famille \
+masks bc families kwakwakgwakw religious ans fisheries http engine franco \
+communaut \>\""}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+      "48", ",", 
+       "\"\<burns embellissement navies mums skocpol fyfe heagerty aylmer auv \
+hhquihhom croque arquidiocesis mergenoe sandeen galois cooks plebeian llb \
+naman \>\""}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+      "49", ",", 
+       "\"\<hepatitis dominion thailand masons tims coal programme \
+geographical walton inmate democracy demands occupations fp star montmorency \
+gazette christianity charter \>\""}], "}"}]}], "}"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.5526559342425756`*^9, 3.552655939533114*^9}}],
+
+Cell[BoxData["topic2"], "Input",
+ CellChangeTimes->{{3.552655886885393*^9, 3.55265588734836*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+  "topic2", "=", 
+   "\"\<great toronto men faire opposition nac plans range\>\""}], 
+  ";"}]], "Input",
+ CellChangeTimes->{{3.5531663261856613`*^9, 3.5531663288002663`*^9}}],
+
+Cell[BoxData["topic5"], "Input",
+ CellChangeTimes->{{3.552655888056471*^9, 3.552655891436297*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"topic5", "=", 
+  "\"\<british toronto canada field fonds modern officers international james \
+politics box chinese star jones space argues postwar centre election\>\""}]], \
+"Input",
+ CellChangeTimes->{{3.553166330565781*^9, 3.553166331325749*^9}}],
+
+Cell[BoxData["\<\"british toronto canada field fonds modern officers \
+international james politics box chinese star jones space argues postwar \
+centre election\"\>"], "Output",
+ CellChangeTimes->{3.553166331923546*^9}]
+}, Open  ]],
+
+Cell[BoxData["topic8"], "Input",
+ CellChangeTimes->{{3.552655892487156*^9, 3.552655893772337*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"topic8", "=", 
+  "\"\<toronto history time canada change years act west south western \
+association archives community national immigrants women living \
+press\>\""}]], "Input",
+ CellChangeTimes->{{3.553166333325706*^9, 3.553166334651019*^9}}],
+
+Cell[BoxData["\<\"toronto history time canada change years act west south \
+western association archives community national immigrants women living press\
+\"\>"], "Output",
+ CellChangeTimes->{3.553166335014634*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"topic9", "=", 
+  "\"\<canada owner press university war british social history north early \
+land\>\""}]], "Input",
+ CellChangeTimes->{{3.552655894427421*^9, 3.552655894828404*^9}, {
+  3.553166336192315*^9, 3.553166347015575*^9}}],
+
+Cell[BoxData["\<\"canada owner press university war british social history \
+north early land\"\>"], "Output",
+ CellChangeTimes->{
+  3.552655895144085*^9, {3.553166337403858*^9, 3.5531663482302713`*^9}}]
+}, Open  ]],
+
+Cell[BoxData["topic16"], "Input",
+ CellChangeTimes->{{3.5526558954801207`*^9, 3.5526558965725193`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"topic16", "=", 
+  "\"\<disease wife international simply required bay progress scientists \
+cleark female provided relation site emigration\>\""}]], "Input",
+ CellChangeTimes->{{3.55316635003718*^9, 3.5531663516445007`*^9}}],
+
+Cell[BoxData["\<\"disease wife international simply required bay progress \
+scientists cleark female provided relation site emigration\"\>"], "Output",
+ CellChangeTimes->{3.55316635204143*^9}]
+}, Open  ]],
+
+Cell[BoxData["topic18"], "Input",
+ CellChangeTimes->{{3.552655897152232*^9, 3.552655897764483*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"topic18", "=", 
+  "\"\<canada history cultural university british canadians world \
+aboriginal\>\""}]], "Input",
+ CellChangeTimes->{{3.553166353061145*^9, 3.553166353813506*^9}}],
+
+Cell[BoxData["\<\"canada history cultural university british canadians world \
+aboriginal\"\>"], "Output",
+ CellChangeTimes->{3.5531663541153193`*^9}]
+}, Open  ]],
+
+Cell[BoxData["topic22"], "Input",
+ CellChangeTimes->{{3.5526558985897923`*^9, 3.552655900004312*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"topic22", "=", 
+  "\"\<deletion endings government ymca emergent\>\""}]], "Input",
+ CellChangeTimes->{{3.5531663551250753`*^9, 3.553166356056089*^9}}],
+
+Cell[BoxData["\<\"deletion endings government ymca emergent\"\>"], "Output",
+ CellChangeTimes->{3.5531663566195908`*^9}]
+}, Open  ]],
+
+Cell[BoxData["topic29"], "Input",
+ CellChangeTimes->{{3.5526559007998466`*^9, 3.55265590137982*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"topic29", "=", 
+  "\"\<bureau francais paper tile companies preservation trading pulp \
+universities managers valley ourage beaver usage\>\""}]], "Input",
+ CellChangeTimes->{{3.553166357413026*^9, 3.5531663585977182`*^9}}],
+
+Cell[BoxData["\<\"bureau francais paper tile companies preservation trading \
+pulp universities managers valley ourage beaver usage\"\>"], "Output",
+ CellChangeTimes->{3.55316635897685*^9}]
+}, Open  ]],
+
+Cell[BoxData["topic31"], "Input",
+ CellChangeTimes->{{3.552655903806896*^9, 3.5526559043002253`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"topic31", "=", 
+  "\"\<persons operational cleaning guiding regiment migration paint settlers \
+latin emigration carter printing township\>\""}]], "Input",
+ CellChangeTimes->{{3.553166360124916*^9, 3.5531663607683287`*^9}}],
+
+Cell[BoxData["\<\"persons operational cleaning guiding regiment migration \
+paint settlers latin emigration carter printing township\"\>"], "Output",
+ CellChangeTimes->{3.553166361099415*^9}]
+}, Open  ]],
+
+Cell[BoxData["topic34"], "Input",
+ CellChangeTimes->{{3.55265590471*^9, 3.552655905708026*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"topic34", "=", 
+  "\"\<religious irish missionaries music policy church methodist police \
+labor welfare trade executive\>\""}]], "Input",
+ CellChangeTimes->{{3.553166362540863*^9, 3.553166363259042*^9}}],
+
+Cell[BoxData["\<\"religious irish missionaries music policy church methodist \
+police labor welfare trade executive\"\>"], "Output",
+ CellChangeTimes->{3.553166363553747*^9}]
+}, Open  ]],
+
+Cell[BoxData["topic45"], "Input",
+ CellChangeTimes->{{3.552655906263884*^9, 3.552655906924069*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"topic45", "=", 
+  "\"\<economic east production nova saint canadians wages\>\""}]], "Input",
+ CellChangeTimes->{{3.553166364740753*^9, 3.553166365532127*^9}}],
+
+Cell[BoxData["\<\"economic east production nova saint canadians wages\"\>"], \
+"Output",
+ CellChangeTimes->{3.553166365977518*^9}]
+}, Open  ]],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.5530875893817463`*^9, 3.553087589751916*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"sparkline", "[", "data_", "]"}], ":=", "\[IndentingNewLine]", 
+  RowBox[{"DateListPlot", "[", 
+   RowBox[{"data", ",", 
+    RowBox[{"{", "1997", "}"}], ",", 
+    RowBox[{"FrameTicks", "\[Rule]", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"Automatic", ",", "Automatic"}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{"2007", ",", "1", ",", "15"}], "}"}], ",", "Red"}], "}"}], 
+        "}"}], ",", "None"}], "}"}]}], ",", 
+    RowBox[{"Axes", "\[Rule]", "False"}], ",", 
+    RowBox[{"Frame", "\[Rule]", "False"}], ",", 
+    RowBox[{"Joined", "\[Rule]", "True"}], ",", 
+    RowBox[{"PlotRange", "\[Rule]", "All"}], ",", 
+    RowBox[{"Filling", "\[Rule]", "Bottom"}], ",", 
+    RowBox[{"AspectRatio", "\[Rule]", "0.2"}], ",", 
+    RowBox[{"ImageSize", "\[Rule]", "120"}], ",", 
+    RowBox[{"Epilog", "\[Rule]", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"Line", "[", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"{", 
+             RowBox[{"2005", ",", "1", ",", "1"}], "}"}], ",", "0"}], "}"}], 
+          ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"{", 
+             RowBox[{"2005", ",", "1", ",", "1"}], "}"}], ",", "1"}], "}"}]}],
+          "}"}], "]"}], ",", 
+       RowBox[{"Line", "[", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"{", 
+             RowBox[{"2002", ",", "1", ",", "1"}], "}"}], ",", "0"}], "}"}], 
+          ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"{", 
+             RowBox[{"2002", ",", "1", ",", "1"}], "}"}], ",", "1"}], "}"}]}],
+          "}"}], "]"}]}], "}"}]}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.552647327370756*^9, 3.552647415493511*^9}, {
+  3.552647465225831*^9, 3.552647465336289*^9}, {3.552929880729354*^9, 
+  3.552929935455739*^9}, {3.55293000646065*^9, 3.5529300148590117`*^9}, {
+  3.552930058620061*^9, 3.552930082530699*^9}, {3.5531663854998417`*^9, 
+  3.553166483607875*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Grid", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<Topic No.\>\"", ",", 
+       "\"\<Mallet Topic Models, Cdn History Dissertations 1997-2010\>\"", 
+       ",", "\"\<Frequency\>\""}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\"\<2\>\"", ",", "topic2", ",", 
+       RowBox[{"sparkline", "[", 
+        RowBox[{"complist", "[", 
+         RowBox[{"[", "2", "]"}], "]"}], "]"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\"\<5\>\"", ",", "topic5", ",", 
+       RowBox[{"sparkline", "[", 
+        RowBox[{"complist", "[", 
+         RowBox[{"[", "5", "]"}], "]"}], "]"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\"\<8\>\"", ",", "topic8", ",", 
+       RowBox[{"sparkline", "[", 
+        RowBox[{"complist", "[", 
+         RowBox[{"[", "8", "]"}], "]"}], "]"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\"\<9\>\"", ",", "topic9", ",", 
+       RowBox[{"sparkline", "[", 
+        RowBox[{"complist", "[", 
+         RowBox[{"[", "9", "]"}], "]"}], "]"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\"\<16\>\"", ",", "topic16", ",", 
+       RowBox[{"sparkline", "[", 
+        RowBox[{"complist", "[", 
+         RowBox[{"[", "16", "]"}], "]"}], "]"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\"\<18\>\"", ",", "topic18", ",", 
+       RowBox[{"sparkline", "[", 
+        RowBox[{"complist", "[", 
+         RowBox[{"[", "18", "]"}], "]"}], "]"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\"\<22\>\"", ",", "topic22", ",", 
+       RowBox[{"sparkline", "[", 
+        RowBox[{"complist", "[", 
+         RowBox[{"[", "22", "]"}], "]"}], "]"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\"\<29\>\"", ",", "topic29", ",", 
+       RowBox[{"sparkline", "[", 
+        RowBox[{"complist", "[", 
+         RowBox[{"[", "29", "]"}], "]"}], "]"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\"\<31\>\"", ",", "topic31", ",", 
+       RowBox[{"sparkline", "[", 
+        RowBox[{"complist", "[", 
+         RowBox[{"[", "31", "]"}], "]"}], "]"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\"\<34\>\"", ",", "topic34", ",", 
+       RowBox[{"sparkline", "[", 
+        RowBox[{"complist", "[", 
+         RowBox[{"[", "34", "]"}], "]"}], "]"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\"\<45\>\"", ",", "topic45", ",", 
+       RowBox[{"sparkline", "[", 
+        RowBox[{"complist", "[", 
+         RowBox[{"[", "45", "]"}], "]"}], "]"}]}], "}"}]}], "}"}], ",", 
+   RowBox[{"Frame", "\[Rule]", "All"}], ",", 
+   RowBox[{"Background", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"None", ",", 
+      RowBox[{"{", "LightGray", "}"}]}], "}"}]}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.552647879289133*^9, 3.5526478874249496`*^9}, {
+  3.552647929121172*^9, 3.552647969367422*^9}, {3.552648039213602*^9, 
+  3.5526482500253153`*^9}, {3.552648344495809*^9, 3.552648393762776*^9}, {
+  3.552648493052043*^9, 3.552648521137288*^9}, {3.552648686749282*^9, 
+  3.552648703646083*^9}, {3.5526552710600357`*^9, 3.552655297795443*^9}, {
+  3.552655336066519*^9, 3.552655344732334*^9}, {3.552655469680523*^9, 
+  3.5526554773263474`*^9}, {3.552655515856662*^9, 3.552655524561016*^9}, {
+  3.552655567183281*^9, 3.5526555734178543`*^9}, {3.5529301835051537`*^9, 
+  3.552930252201108*^9}, {3.553166504771657*^9, 3.553166519915057*^9}, {
+  3.553167583063424*^9, 3.55316758409368*^9}}],
+
+Cell[BoxData[
+ TagBox[GridBox[{
+    {"\<\"Topic No.\"\>", "\<\"Mallet Topic Models, Cdn History Dissertations \
+1997-2010\"\>", "\<\"Frequency\"\>"},
+    {"\<\"2\"\>", "\<\"great toronto men faire opposition nac plans \
+range\"\>", 
+     GraphicsBox[
+      GraphicsComplexBox[{{3.0610656*^9, 0.0415627991238424}, {3.0926016*^9, 
+       0.0545451018506565}, {3.1241376*^9, 0.0395873926886832}, {3.1556736*^9,
+        0.0284671754269643}, {3.187296*^9, 0.0390903566779343}, {3.218832*^9, 
+       0.0344695110117644}, {3.250368*^9, 0.0326128167712641}, {3.281904*^9, 
+       0.0380630684019641}, {3.3135264*^9, 0.0358499768032886}, {3.3450624*^9,
+        0.0241216221583061}, {3.3765984*^9, 0.0421644617338612}, {
+       3.4081344*^9, 0.013010650199335}, {3.4397568*^9, 0.0249861212092993}, {
+       3.4712928*^9, 0.0052690153372215}, {3.0610656*^9, 0.}, {3.4712928*^9, 
+       0.}}, {{{}, 
+         {Hue[0.67, 0.6, 0.6], Opacity[0.2], EdgeForm[None], 
+          GraphicsGroupBox[
+           PolygonBox[{{1, 15, 16, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 
+            2}}]]}, {}, {}}, {{}, {}, 
+         {Hue[0.67, 0.6, 0.6], 
+          LineBox[{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14}]}}}],
+      AspectRatio->0.2,
+      AxesOrigin->{3.1*^9, 0},
+      Epilog->{
+        LineBox[
+         NCache[{{3313526400, 0}, {3313526400, 1000}}, {{3.3135264*^9, 0}, {
+           3.3135264*^9, 1000}}]], 
+        LineBox[
+         NCache[{{3218832000, 0}, {3218832000, 1000}}, {{3.218832*^9, 0}, {
+           3.218832*^9, 1000}}]]},
+      FrameTicks->None,
+      GridLines->{{}, None},
+      ImageSize->120,
+      PlotRange->{All, All},
+      PlotRangeClipping->True,
+      PlotRangePadding->{Automatic, Automatic},
+      Ticks->None,
+      ImageCache->GraphicsData["CompressedBitmap", "\<\
+eJy1VvtTVHUUv7q7vHzESJai1eYvOD3gL2jMNHwClvnIZGxjtMVSnoKEU0lG
+gIYNSgIKgglIIMtTBHkjT0cgWB6+UHIk0MbRkJTA+fQ9Z7/LrE3TwM60M/u9
+95z7/Z7H53zOuddDF6zfvksX7Ouj064I1PnrfX2CtO5+gUKlmqYoSpj4O2sV
+tbiHuLVYwiB+/7y48kWFnp4eeHp6sjRP6kgmPUlvmrZPp8sbuNJ7TzzPz6uC
+i8vrLM2TOpJJT9JrtKqsOLjYvM/QhYj9FWxhuhV2XKQu7od6rF2ditrqPsWa
+eMy6poZ+umPJgVc1On75DQH+Rdjm/TOGhobVVph/gVcNjJ2D2BtSgiVvJWJv
+aAmHay/d1NXexOaNGQgPK8Xo6LjGCjdzebVDT/ddfL4zH+FflKKtdQCxh+qw
+ZtVJBAYUofzCNRt5NDurg9XHk1oUW6vdqbD/q3Lod+RibOypLKKGQTsa1wDP
+tWkcSklxr3hmyrS35y4OxtTAyyMNJeeu2FnhWiN1nR2DOBbfSCaVmVKXcKwJ
+mzakY3h4VDGhaMfAJyU24z2vU9jucxbFRb34zDcPPp/k4P79P+0tQlggzRCI
+ZirMnmRYKl5tGPTD39cxJfU7DPD91IBLLbcd5Kac7E54rEnFwMAfip0EjNyl
+pV5mCkR8Xc5gOliENV/mTfsyM9rh/VEWIg9UoqG+/z/Cm2UZHv9bmm/jW3Fu
+1YoUpmJ1VR8XJCaqhsPNzTGKmEz2KsqvM0GMxkFlhhwZjx6NQv6eie9FPmPP
+haeKvL/uJ+i2ZcOQa8Q3ERXsb/euAuQZuiYqZRmviRy26DIOcYxVFTdQWNCD
+MyJXwqv18h3lObnHnBO1zL7wUqx0T2HMGhv6ZfczP/i8l+cp9i/sTrCmuelX
+rBP69NNtynyLHOZKjGkKREqMqPMFSaVdG85PNAw+3JTJLEtMaCadqaee5/Av
+lF1DSvIl7NQnwmmOFt5bsxgO9+XJWLokiWGmMhP5/AQkxA735Sew8YN0LkmS
+MFkubIhS28mMib+i0li0aLEwF8dVORhdgwcPHsvWVRNCbG7rljOorbmpkslS
+wESWw7EXFWeLZJ1ksmWlV7EnqJiTpVFMhDKZnMMgFuR3w3934QTIBI4htwtH
+RHeHBJ/Dls2ZWLb0OANCcmhIKrRaF5Sev4r6ultobxuwYXNOzF3iFOEXFnpe
+4JeBd5ed4I6MjqrGoZhafLmvDAF+hfDR5WDD+tPCbTLeeTuJ6+jo+LIYm2kY
+GflLco/xYcAofAKdZPJDXBM+FlhkbGpP1F+8ZdHUGsJKlCqPPVBSguGS7Tya
+OeGoyCrGnCKlcUeeCDgxqCdst7e3w83NjaWZsj/oPA2D3LNGzo66LOHHJmIe
+s7Omuo/qZjbh6urKZkgyhWDLJqoqbzC+QWKAE5kpDBoQz2Sn5q0HxGPKvbLi
++gyZIA3J6O+qsXrlScQfbcT4+FPFUXoU9xPtrPmXRMxfCiSbI5sl3REpPxYt
+vkdU/cmTsYWmYMwN2N01hPgjDcx24pdoVjlY1NzU1IDBQv/7vRHnSTqebVHF
+hw8fsyS9aizeO7Fi8lKu9PoTxTMBI1YqtK/ewL0nWL1wkl7lh5GtLGlb6x2m
+A/eL6Acx1xkJM8L01hO1eWlq1u3leCFrZJWsU2dJhF6ZmjUHC6DEUKQ3vfLq
+1Ey4/q/blWl/A7pYHZ4=\
+\>"]]},
+    {"\<\"5\"\>", "\<\"british toronto canada field fonds modern officers \
+international james politics box chinese star jones space argues postwar \
+centre election\"\>", 
+     GraphicsBox[
+      GraphicsComplexBox[{{3.0610656*^9, 0.0182432511788783}, {3.0926016*^9, 
+       0.0153210214876468}, {3.1241376*^9, 0.0161655849583081}, {3.1556736*^9,
+        0.00690840218135165}, {3.187296*^9, 0.0157677946337962}, {3.218832*^9,
+        0.0155492265181596}, {3.250368*^9, 0.0244223588980269}, {3.281904*^9, 
+       0.0270170881666664}, {3.3135264*^9, 0.0225730014440221}, {3.3450624*^9,
+        0.0288058332884705}, {3.3765984*^9, 0.0295801137411838}, {
+       3.4081344*^9, 0.061203806696065}, {3.4397568*^9, 0.0437452319638399}, {
+       3.4712928*^9, 0.0507734401248714}, {3.0610656*^9, 0.}, {3.4712928*^9, 
+       0.}}, {{{}, 
+         {Hue[0.67, 0.6, 0.6], Opacity[0.2], EdgeForm[None], 
+          GraphicsGroupBox[
+           PolygonBox[{{1, 15, 16, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 
+            2}}]]}, {}, {}}, {{}, {}, 
+         {Hue[0.67, 0.6, 0.6], 
+          LineBox[{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14}]}}}],
+      AspectRatio->0.2,
+      AxesOrigin->{3.1*^9, 0},
+      Epilog->{
+        LineBox[
+         NCache[{{3313526400, 0}, {3313526400, 1000}}, {{3.3135264*^9, 0}, {
+           3.3135264*^9, 1000}}]], 
+        LineBox[
+         NCache[{{3218832000, 0}, {3218832000, 1000}}, {{3.218832*^9, 0}, {
+           3.218832*^9, 1000}}]]},
+      FrameTicks->None,
+      GridLines->{{}, None},
+      ImageSize->120,
+      PlotRange->{All, All},
+      PlotRangeClipping->True,
+      PlotRangePadding->{Automatic, Automatic},
+      Ticks->None,
+      ImageCache->GraphicsData["CompressedBitmap", "\<\
+eJydVWtQVGUYPgIJkaSC4WXGaX/kMFnGr6ZfTeUF1GxVNKXMdAUSVBJhjaCU
+0qjxSjgqwrLcLy73RZaLcl1A7rBcd3Eszbv0txl/NPb0ve85MmfqB+zuzH7f
++d7zfu/zXp/ziU4fGRGt00eF6TTBsbqYyKiwOE3Q4Vghcp8jSVKC+C/TSB7i
+GeJRtSRA/P67vcObO+x2O7RaLZ+WKDI6k5xOq2R1N9rexqTjT/HeXNWCgIC3
++LREkdGZ5HRaSau76uJSFr+EsdEnMF0dxpGYGqSmdMDadkd61VWj/ix+RTZa
+PIyj+lqsDzIiIqwc2Vn9SDp2A9pNuQjdUYRTv7Siof6W0HYRzFtRGh15Aod9
+ik9zefVkB64W2aCPs7ADX4WXI/1KD/p670uyDS++U1c7iZ+TW7BjeyE2a/Pw
+Q1KjAJygd56u+iUtJglB4Vq1Hfm5g7iQ2okTPzYh9kgN9u0tRciWfKz+MAPr
+1mTig/fT+Tl4nRGbNuZg6+Y8fLqtAJ+HFmPvnlKW74+oQEZ6D/r7HkgvM4YH
+Y7S2/IaUc+348guTG10Wyfx4QzY2rs/GhuAsjjxorZFh3nv3OHx8liMhvh4l
+phHKkOQ/q3AWMRRlKUxXhjgRwskTTbh44Sby8wZRI0LsaL/LGacf6dLz0OAj
+TsHNzj9gbf0dTY23OdsihPlsdiGr9nTfQ2/PfVYVrzA48FBcfQjb0CMM2x6j
+tKQRK1asxOVLXdxFFA61KmVV6Eh+M4Qgz9Q82Gw2BAYGTrs40P8AWcY+HDpo
+FjYzcSCyCoaMXrRb75BduSm90N11D5UV40i73M3N6+v7OiLC07iZRVRv/g/J
+XY0kqkTrcowMP0ZhwRC34/aQAkZc85GB+4BqfDi6Gse+v44zp9uQaehFyvkO
+xB+txZ7dJVw86guKnnQoExpNABIT8qCPtXC/ULEPHTDjvOgFc+U44UlvzOCb
+l5IZygb5R0W01DhQLMbmSlo3zpxqw3eJDUj+qZkzVWtxUFHlkPzYDJl7kVAq
+Il1NPtnMLb52tQG7d5k4PHI9an8lokWyqXhEC/Hf1HHrX7rYJS2bwdUXJKjC
+FMwluz8+9hTXG26xe9XmCVSUjTGfUbpzcwZgNPQRBqdJMMBSF6DmK7LOjrvM
+XoLZZCZw0s4CRUbu0pjWWRwyVzhpZ6EiKy8b5c4gyp6nzAHN0cT4U4UGXbUt
+swtVPWRrPtn0VgzmiL4nnqQxPBhVhdRfO1FfNwn7xJR8yUk4XxXc2dNWIjJq
+Rpl7fZg4qHmokYjriB2oyYimP9tZPO0G8av4lhBtS0564KfyIPHbejYnovFQ
+fR5pKolSafKeP/9Hmeq50zxSVGhD0vEbCN1ZRLuTDixSZFQ1YiExc+JE6B78
+KaJvQczX1zA19Ze3okrARI50cnMO7TVePXniKavnzlqZd4lttojClppGlB6Y
+tUl/ZR4pFeH7yniqiQWePftbqe+sTS1WBdjcdFtVoFmbWOWSujTnX0pRb/s=
+\
+\>"]]},
+    {"\<\"8\"\>", "\<\"toronto history time canada change years act west \
+south western association archives community national immigrants women living \
+press\"\>", 
+     GraphicsBox[
+      GraphicsComplexBox[{{3.0610656*^9, 0.0602743718032286}, {3.0926016*^9, 
+       0.0474997597520061}, {3.1241376*^9, 0.0564744169757092}, {3.1556736*^9,
+        0.060854234283426}, {3.187296*^9, 0.0644049544569521}, {3.218832*^9, 
+       0.0677180178088576}, {3.250368*^9, 0.0853233878689306}, {3.281904*^9, 
+       0.0668703874127514}, {3.3135264*^9, 0.0756713553056169}, {3.3450624*^9,
+        0.0537159237231518}, {3.3765984*^9, 0.0700926497509473}, {
+       3.4081344*^9, 0.0781095052173989}, {3.4397568*^9, 0.081629734159972}, {
+       3.4712928*^9, 0.117074442199532}, {3.0610656*^9, 0.}, {3.4712928*^9, 
+       0.}}, {{{}, 
+         {Hue[0.67, 0.6, 0.6], Opacity[0.2], EdgeForm[None], 
+          GraphicsGroupBox[
+           PolygonBox[{{1, 15, 16, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 
+            2}}]]}, {}, {}}, {{}, {}, 
+         {Hue[0.67, 0.6, 0.6], 
+          LineBox[{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14}]}}}],
+      AspectRatio->0.2,
+      AxesOrigin->{3.1*^9, 0},
+      Epilog->{
+        LineBox[
+         NCache[{{3313526400, 0}, {3313526400, 1000}}, {{3.3135264*^9, 0}, {
+           3.3135264*^9, 1000}}]], 
+        LineBox[
+         NCache[{{3218832000, 0}, {3218832000, 1000}}, {{3.218832*^9, 0}, {
+           3.218832*^9, 1000}}]]},
+      FrameTicks->None,
+      GridLines->{{}, None},
+      ImageSize->120,
+      PlotRange->{All, All},
+      PlotRangeClipping->True,
+      PlotRangePadding->{Automatic, Automatic},
+      Ticks->None,
+      ImageCache->GraphicsData["CompressedBitmap", "\<\
+eJztVflPlGcQ/mRFRdsYJSlEjK5GS2Nr+Q8aWxVqEawoams9CIWCF4fYiqgx
+KlFUtFKNcizXcoMc5SbAcgiUe5drofWMWq/fTTQNjzPzfZKN2Bb42U2+9/tm
+3vedeWbmmVkvv4iggP1+EcH+fnqPcL/QoGD/g3r3kHBS6aYpihJJzwK9Mp2+
+QZ82SyTo9/brc3npYLVa4e3tLZKzpmOZ9SytVI/b8eszjAw/p/2SYhNcXT8V
+yVnTscx6llbwqnt/cWIXZ2uH+iyP+UukxVM1Zi/qD2Adeoaa6j9x9UobwkJK
+sf6bVLivMWCrb6bI52MakWnshanuNgYHnrpM0N8MTdfV+XAM65K3MSgLZG9o
+8CnKfrfiUmwz9gQVi/ttW7JwLKoG6andaG25z65RX3cLGQTl3NlGhB4oxZbN
+mVj9ZaKcPRhWhujT9Yj7tQUphi7k5/WhqnIELc33YDE/nj9B2DpZZ2LY+gxF
+hYPiZp1HMgJ/vCEZInOKflwYEiyOHa3Brh15OHWyDjnZFnR3PXSwiXKg/wnq
+am/BmN6Dy4Qy+lQ9Dv9cib3BxXLN51sj1q5Okog2bkjH9u9yEOB/AyEE4cjh
+KpwmsxcpQ9ev/QFjWg8KCwZQWT6MBtMddLQ/YPu6f41ynm2U8vR0P8KVuFb4
+bsoQVwnx7ejve4K83D4ciawSHny/LRsxZxokkZQRZeG4yMWjFIelj2R1Eh3b
+amu9j9qav8jvELKzzDAkdiLucgvOks3jlK2I8HIJf/fOPCkm++Twv1qVIN++
+pPPyPAdHRz1SkrvQ2/OIGMvxOKCz4wGuXW2T1O3elS8p+o3iKcjvF8IwXjut
+mm9ir6wYkZR/7W7AL4cqUFE+rNgLZgepOMk4E20SQnl5puJoVDVycyww1Qv3
+1Vxq8a+Q15yx0jKexoY7xJISLFr0sZSNiczxGZI6Od9aUzhK7pMSO/BTQKGK
+hTBxjspKrUhM6MDJE7UICizCBq80ocTOH3LljIvLMniui8FmnwzJIzFMmS04
+JCtobrorNd23p2SsOTZtNEpTsU2mTnHRINdlvk0o6oSfB7PZDDc3N5ZkxnCv
+hYWWSRgMJ4mgcT/zHvclu+G9cDrD5X358h8KkW3NFDgW89/CUA7fyWkpYmML
+MDo6Sp5Uf9z3TY13pVcZNvc7M957fRpWfRFPqUmGD8HfsT0XgZQqHkdRkdXS
+50xLuqvMGheHzjYORd2aJXTMyjTLnPBYa6A0pmDf3hKkUye9ePHqQ+0wX+Pr
+Ko/pp1JojpTsJs0SHpWcwqyMXskHdzKPSB4STD8ap2qZ/wPTDE33hjYszX0H
+gCWyTpcZxnnhNiGK2f+Peed3mFoqq72wPP56u8Bl6AxXNwV7yzRo3GlcGu7C
+BtNtuymYWq5BY8Yw+RnapYs3pYEnacpV0/HcYcJeON80WROf2Iw1/k9iyW5y
+JlZO6bgy7TX1G2IJ\
+\>"]]},
+    {"\<\"9\"\>", "\<\"canada owner press university war british social \
+history north early land\"\>", 
+     GraphicsBox[
+      GraphicsComplexBox[{{3.0610656*^9, 0.172483432576385}, {3.0926016*^9, 
+       0.159200472513734}, {3.1241376*^9, 0.149704863560332}, {3.1556736*^9, 
+       0.199755469922789}, {3.187296*^9, 0.168275832383591}, {3.218832*^9, 
+       0.169271657972465}, {3.250368*^9, 0.185503593663111}, {3.281904*^9, 
+       0.190379953106609}, {3.3135264*^9, 0.168390978281604}, {3.3450624*^9, 
+       0.140569578751071}, {3.3765984*^9, 0.175902594476847}, {3.4081344*^9, 
+       0.205091688988101}, {3.4397568*^9, 0.182253533569959}, {3.4712928*^9, 
+       0.224022169891154}, {3.0610656*^9, 0.135}, {3.4712928*^9, 
+       0.135}}, {{{}, 
+         {Hue[0.67, 0.6, 0.6], Opacity[0.2], EdgeForm[None], 
+          GraphicsGroupBox[
+           PolygonBox[{{1, 15, 16, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 
+            2}}]]}, {}, {}}, {{}, {}, 
+         {Hue[0.67, 0.6, 0.6], 
+          LineBox[{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14}]}}}],
+      AspectRatio->0.2,
+      AxesOrigin->{3.1*^9, 0.135},
+      Epilog->{
+        LineBox[
+         NCache[{{3313526400, 0}, {3313526400, 1000}}, {{3.3135264*^9, 0}, {
+           3.3135264*^9, 1000}}]], 
+        LineBox[
+         NCache[{{3218832000, 0}, {3218832000, 1000}}, {{3.218832*^9, 0}, {
+           3.218832*^9, 1000}}]]},
+      FrameTicks->None,
+      GridLines->{{}, None},
+      ImageSize->120,
+      PlotRange->{All, All},
+      PlotRangeClipping->True,
+      PlotRangePadding->{Automatic, Automatic},
+      Ticks->None,
+      ImageCache->GraphicsData["CompressedBitmap", "\<\
+eJydVvlTlVUY/uSyI6iVgGAFbTTTwv/gTOKGZIowJhkRBolgcFOQSqfU0MoS
+UnBhX2ITWQRkEwG57IuoiGkBuRQxwy9hMyHwdp73HuDzcp0B7sz97j3nO997
+nvd5nvc9n6e/Nihwt782OMDfxSPcf09QcECEy+qwcDGlWaQoSpT4OrkopuI/
+ib+qSxSJz/TP2/yjoe7ubnJ3d+eRo5zDGPMYvbWg5Sb4eZNu9w2L+0WFteTm
+9gaPHOUcxpjHyEzONdT3U4B/PnV2PFBewpxmAcFMZcjTCS20bk0yHf+hgbw3
+Z9DVhgHF1TDoUvmIrnGQUpI7aFdwIXV1PnSc414mfLWk5qY/KGhnAe3wy6W6
+K79jls6cbqEN61KovOy2i+G2NvycNd3q/ZuqK+9Qwqlm0oaXktfGNPJcn0Kf
+hZVQ7E+NtH5tMlVX3XF4KhxLNRz+pqZ08GNIe3x8grfTc0L5edf5VnZW94uG
+iCxluCbdIJ2M01Fw0AXyeCeRfLyzKDqqgpKT2iGPRiqemdFFm7zSqL3tvmL/
+VHTm0+jEOgoLLSFfnywkbC7DVIncN25IpZ/jdMoLhpD0rrCgxoYBJgPkQtD9
+kZcoL6eHOtrvi7sz6cV8e4UCA85T780hWwkJ/Epipk02G6YZj48ezWW9jhyu
+pbGxccGFPjQYAewDX1Uh3kpDmCYSZr3Q/UdB+vZt2czyl9GVdKHgJj1+PKHY
+yHyBJ2RXEWIpi/m5xdTaco9t93lEKUXuK6cvoivo4IFqOvR1DcUcqaXvjtWR
+NiKZnJ1fgTUdpGNhOXt7V1q16hCVXuyzkWi7ux6yE0M+LaKea386G6IVmoCQ
+YzF1TPxBkVRxUS9NTEwumSpwEcHHO5POnW0VDsVmS6ik+Bb78oyoqTRhsKTE
+Nvb3qZNNFHuikfMGztCQs2S/3JXWrE6kqH2XqLy0T3lWctzV+YC5XeuRRI6O
+L1NLS7tiK1ELyVhWv/dzUPxOs1BrGDX6w+TkpAipn6uv62eqRf6KpZQXToGM
+gnopoSX3JkgMF+L+lvcyaJvvLxQvyk5QaicVvHH9L84GIaP3V9Dw8OhUa1Ps
+VEY7/n0DvSsqVRC3QoV0hURVkH+DuW3WDUrT6WUJ3V3MHh4a+seKl1qrmyl/
+EL2osJd7ATiM3FtOZaV91pJC2Cc5sZ03RzWJVjPNj7oH68GaTRc9pEN1CJql
+7TTU1nqPLS2S1nP3RBb6RMGV3/YcrNHIRGqq79LmTelsHOFsayOngj7QMo4A
+xuNiddyA0dyQf/iei3T4m8sUL8yTk30NDQ6i83rUNYot4KN8No+pkeyWSoSI
+jcL5QCAUzrCSLQdeSohvZhMgQagpQlmocnRSeUorym6vtky2cg03OjySntYp
+uJqdnb51MYtQGKEpI72LTgiusB3KG96CfIiDbERW5kYSWaaiGlZEc0tJareQ
+rTgvt4cLEeUM2rEM3kLUyopfzVUJOUtocDBqCMKhj2zdkkn9/SO2RvKwU3GA
+FiQ6gOymT4J8RuWlyzV3yXdrFttTOFpRm+KTwAJGK/ymUeUFQeUpZqYCvFIu
+ge4f7shjHR89GrMzAtTYS8ZzfLXifEE6CkI0AU4EfQTa4/wXB6CAPoNGnHx8
+r7bmN1MVmuflFngLkB9lrlCWq7oqFEP4qWNkdPQ/S9XusAlKUZStRrX7XN+s
+HOQcksSZqG8hM+Hx/uLlmYpaMFlA+FdVQieea+Nybbw6IMtiXqFeU6GCDHhT
+ELUyzyhuqijoejs/Pk8jI/+azC/K67guhI+Fvfcqi/4Hr6GrRg==\
+\>"]]},
+    {"\<\"16\"\>", "\<\"disease wife international simply required bay \
+progress scientists cleark female provided relation site emigration\"\>", 
+     GraphicsBox[
+      GraphicsComplexBox[{{3.0610656*^9, 0.0209751877690279}, {3.0926016*^9, 
+       0.016910560186972}, {3.1241376*^9, 0.021187508856956}, {3.1556736*^9, 
+       0.0521827746960679}, {3.187296*^9, 0.0215009564641114}, {3.218832*^9, 
+       0.02563297865619}, {3.250368*^9, 0.0208108842627242}, {3.281904*^9, 
+       0.0240684726587026}, {3.3135264*^9, 0.0222189617576736}, {3.3450624*^9,
+        0.0183340496680296}, {3.3765984*^9, 0.0102658868690309}, {
+       3.4081344*^9, 0.00894480817587124}, {3.4397568*^9, 
+       0.0219672902273018}, {3.4712928*^9, 0.0172348504823046}, {3.0610656*^9,
+        0.}, {3.4712928*^9, 0.}}, {{{}, 
+         {Hue[0.67, 0.6, 0.6], Opacity[0.2], EdgeForm[None], 
+          GraphicsGroupBox[
+           PolygonBox[{{1, 15, 16, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 
+            2}}]]}, {}, {}}, {{}, {}, 
+         {Hue[0.67, 0.6, 0.6], 
+          LineBox[{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14}]}}}],
+      AspectRatio->0.2,
+      AxesOrigin->{3.1*^9, 0},
+      Epilog->{
+        LineBox[
+         NCache[{{3313526400, 0}, {3313526400, 1000}}, {{3.3135264*^9, 0}, {
+           3.3135264*^9, 1000}}]], 
+        LineBox[
+         NCache[{{3218832000, 0}, {3218832000, 1000}}, {{3.218832*^9, 0}, {
+           3.218832*^9, 1000}}]]},
+      FrameTicks->None,
+      GridLines->{{}, None},
+      ImageSize->120,
+      PlotRange->{All, All},
+      PlotRangeClipping->True,
+      PlotRangePadding->{Automatic, Automatic},
+      Ticks->None,
+      ImageCache->GraphicsData["CompressedBitmap", "\<\
+eJy9VflT1VUU/8pTCIsyi1Apo6bGpkX+gspcQFBAUYI0pyHEwERlGRRNIQlF
+xFBnQtlkk01ZhDBk88EDYofH+jBTwV0bp5/yB4b4dM55t4acpvExU2/m3fu9
+2+ee8zmfc66Hf0RQYIh/RHCAv5NrmP/OoOCAcCeXHWE0pZuhaVoU/Rc4aTPp
+G/Q5pYkC/R7vFkung8lkgqenp4zmqTke8zyP3jNvt+LuXVwe+YXWy8/rsWjR
+OzKap+Z4zPM8eptb3f958Dlpn0Zb6w00Ga6jpvonVJQPo6igD1mZ3TiV3Iak
+b5txKE6PzIwumIYfaHOme9kz6kr9patIiG+Ez/o8eK7OxnrvM/h0QyECA0qw
+fVsFIiN+QPS+WrmUL+f5T3wLUHxuwGzwdC63ldYahoZrSDxigJ9vPrw8c/DN
+gXpcrLpsK5CzeBOKCvvg65OHLZtLmBDN7vE7rQXrKQwN3kd93c/Ize7B4UMN
+2P9VDdLTOhgP/X13Fz6haWY4G7Q0jyLpaBM2+BXAY1UWDsTU4ULlCCYnJ8kG
+s30UAKSndsh6RPgFtDSNkiFmzM6Om8wRzhb1a1PN1V4QtzrabyI/z4jEBAPC
+dlaSi/lY9lGa9Dzm+ZMU792RVRIOXvNZdwahO76XtbzcXjTor2rz/8EtazXX
+3XULhsbrGB66r7Rl95erbHpz0yjOFfXjxLEW7N5Vhc82nYXL8nSRQfT+WlRW
+mMTduWL3s8wijiYa4OZ6Wujo7bkjvrS33WA3xa6QL8vlPO8J2lLKPv7Nexs5
+wWLaHlIhceJ4cdzGxyfIcvMeto6FmZvTg3jas41Ql3yQgj1RF5UnNugz3oHf
+x/nYtLEIe/dU4+R3reTZMHtNd/GeuVNZkX9P922UlQ7hWFIzQoll7zW5cF2R
+IcwuXZKKdWtzyeoy7CPtnDjegsJ8I9tmhYH+e9rzaP1xDLU1VwhiUEzjAB1J
+aBSy7O1fg7vbYSxfmoa1XjnYGnQesV/XiwRZN709t4VMB3HRFl2dtxBD59aQ
+7Fe7Z2GVWyaCg8oQf1AvwiD9KTq0F1VFY/45FU5ndJrTQHsLgwP3hIHj5BHH
+K+VUuyg/4PNirHTJEOgvAkuxNTgVjo5vICy0UrzkOG+mPbGUcTkUAc5EMk9Y
+4kxi3ZQUD0jNYTe4FHCWrliWLlrkbN1IuuQYhxMmU8BUMCULX3kTycnlbO+r
+ynSGJbkyg1TgxCt7tdSgvwb3lZmoq72iipIOe6OqxVLeMVNaSSupjKXFg9gV
+mQUHh9eRndUt58lyOwU3YnoA9VP86eDs7Ayj0Tj1KXhJLXEeeRMfpGVttro9
+I71TeH70aJzuNe/j4wwz9YX5F1g2Nia6jmlTxU4nymFHx8Z+1Wwtg3VQSxwZ
+zlLKWHMm0RxrmnXM1WC2ZbB/LrWRrll/JCBz1VU8sh7jYi+piD0x7Hy1xGnC
+pZFKIUXRDMsaYd1NTPw+PVgBklLDMFQorBQyF1svj2w8fPgb6cgi5AWq7LDP
+nP4H4+QtkDeAeRnov6vZWQbpKN0sqcGc4oX0hnO+UJWiSmoR1MtqiYvkh++n
+8BNARdByCCFqjmUHF/+n27UZfwAolImG\
+\>"]]},
+    {"\<\"18\"\>", "\<\"canada history cultural university british canadians \
+world aboriginal\"\>", 
+     GraphicsBox[
+      GraphicsComplexBox[{{3.0610656*^9, 0.0353417572479726}, {3.0926016*^9, 
+       0.0345687319967295}, {3.1241376*^9, 0.0370175036513323}, {3.1556736*^9,
+        0.0133269946190031}, {3.187296*^9, 0.0435605127873028}, {3.218832*^9, 
+       0.052014138300888}, {3.250368*^9, 0.0617327351560181}, {3.281904*^9, 
+       0.0569662195145231}, {3.3135264*^9, 0.0645225150340215}, {3.3450624*^9,
+        0.0643726893793305}, {3.3765984*^9, 0.0829366494245533}, {
+       3.4081344*^9, 0.0686368194250108}, {3.4397568*^9, 
+       0.0680453529033236}, {3.4712928*^9, 0.0227823454463182}, {3.0610656*^9,
+        0.}, {3.4712928*^9, 0.}}, {{{}, 
+         {Hue[0.67, 0.6, 0.6], Opacity[0.2], EdgeForm[None], 
+          GraphicsGroupBox[
+           PolygonBox[{{1, 15, 16, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 
+            2}}]]}, {}, {}}, {{}, {}, 
+         {Hue[0.67, 0.6, 0.6], 
+          LineBox[{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14}]}}}],
+      AspectRatio->0.2,
+      AxesOrigin->{3.1*^9, 0},
+      Epilog->{
+        LineBox[
+         NCache[{{3313526400, 0}, {3313526400, 1000}}, {{3.3135264*^9, 0}, {
+           3.3135264*^9, 1000}}]], 
+        LineBox[
+         NCache[{{3218832000, 0}, {3218832000, 1000}}, {{3.218832*^9, 0}, {
+           3.218832*^9, 1000}}]]},
+      FrameTicks->None,
+      GridLines->{{}, None},
+      ImageSize->120,
+      PlotRange->{All, All},
+      PlotRangeClipping->True,
+      PlotRangePadding->{Automatic, Automatic},
+      Ticks->None,
+      ImageCache->GraphicsData["CompressedBitmap", "\<\
+eJytVXlQlVUU/4CnhkjNMCbm5MRURFrGX01/aZaFuKFZjWaaIMFAChJqihUq
+iIGSy7gkyv5QlgeILILIjuzbY5GH1SC4pk3DMM7UpMWvc867r3k52QDTm/m+
+++757j3nd3/nd85d5rM1wC/IZ2ugr4/LwlCfkIBA3y0uHptDyWRno2laGD0z
+XDQd/Qf9tXqFgX6PDq/JYAeTyQQvLy+ZTVc2nrOdZ3PMy215eBVX+36m7+fz
+KuHm9orMpisbz9nOs9n8tvs/Ns5Qi+ouD8DXJxuGrC7tqfE6My+ahN4rd3Hk
+cB0WeyYh/nQzvJamIPZADfpM9zTH8Tp3FrM9iov6sGZ1Oj4LyMPtW8P8CS3N
+N7DB24Cgjedh7LitTRllkFnK1mm8A/XTbKxiPi3fdehov43wr0rlIGn6Dp0s
+0eFKz13sCr+ED99PQ1Vlv8Moo76sbDHRVYL6wYM/zOFU1Kkq6hl9h0T8miLf
+v//7RBWVPiIpsVXYzUjvnDzKqG7Kpk9px8oVegwN/apZ86tNE8+nTjYhOCgf
+GwPzEOB/Dn6+OQJy/bosfLwmA6tXnRX6fTdkI3hTPnZ8UYyI3WWI3V+D48ca
+kEzIsg3dsv+jVemcLntxP0Hcl178Hiu8UhHzTRVMvfe0J0aJ/iVlK75wFUsW
+JaG//xdNZ43eXtyXFF9lTljGyM3poe29KCwwif1S6Q+0tqL8R20yCvJNyKR1
+SQmtOH60HgdiqrFnVxm2b7uATSSiI4cu4+HDP6coyltbbgoRrLme7p8mjRK0
+q7I11A9i2ZJkNDYMEg0CeqrqBCMjI38rz1HeE5kXRO4pF5p5PJPWQVuv60YZ
+9UVl6+q8Iy6OHa3XzNohQDyITmHI7MJhOiYnkRldTlkJ/bxQ6GCWc7Ir2K32
+zL+EeEHZqKCl5r7ceZHKXkLMkkFEidqaa0hOapPSYe288Xo4nJyew/7oaskM
+UTntP7zvi6oU1ikRFu9zrLwbssrg4uKG6H2V8F5vwLsL4uHvl4uDsbUoKuzj
+LqRTPYNxNjVeF3Mq6f/Qt7XYuaMEUXsruJ4ZqFmfjyB5Xtm43D5YmYbh4d9I
+sVbtfSaMRiPc3d0lg4yKWwmrb29EOdbSmT3eiRfZcJ/geuJe8fb8U1i6OBne
+n2RhC1HOB0043YKDBGtzcAHeW55K+xLg/2kOoiIroE9tR031NQs0zaI/7j8c
+01oJfERO58DAkGb/z5vICqqqHXGE9rZbyDhrxMkTjZT1bm5lnBrFuVQo2lpv
+Ije7R5gLURAdHWdi3twIWz6LLQclmXFTWrQwUR6Gwcmgjmy+UhwkEQqxPCx1
+CiVa5SbLimFmqKFTlh+L3tmqFbq6zoZeX4Lmphu2vM+Wq5WwM2I+GVUOtlOT
+YkRc5mQzC4jqjUOeimsS+TDhC946jfnz4vDm3DgZOVEsK4stMaGFDvFYWJbr
+nedsN1NsLmqGWlc7gJ1hJQKFVUtAJyiFMhHncnuwbUsRPD0SEBpSKG2UiWGC
+SMya09gi26umwpHr6wblGvH0SBRF8YVpqVBuxVz869Zm4juSABPkPLZQDlZK
+4TrbTa2UQ/ElwCqIpGKgxjtjbF6fVDYGm5LcJn3g2bG5mDOu5ZrNX7euhLQ=
+\
+\>"]]},
+    {"\<\"22\"\>", "\<\"deletion endings government ymca emergent\"\>", 
+     GraphicsBox[
+      GraphicsComplexBox[{{3.0610656*^9, 0.0029972943055629}, {3.0926016*^9, 
+       0.00156144473437714}, {3.1241376*^9, 0.00381538978320398}, {
+       3.1556736*^9, 0.0067903418701011}, {3.187296*^9, 
+       0.00245155731281088}, {3.218832*^9, 0.00292331870982441}, {3.250368*^9,
+        0.000222}, {3.281904*^9, 0.000151}, {3.3135264*^9, 0.000595}, {
+       3.3450624*^9, 0.}, {3.3765984*^9, 0.}, {3.4081344*^9, 0.}, {
+       3.4397568*^9, 0.}, {3.4712928*^9, 0.}, {3.0610656*^9, 0.}}, {{{}, 
+         {Hue[0.67, 0.6, 0.6], Opacity[0.2], EdgeForm[None], 
+          GraphicsGroupBox[
+           PolygonBox[{{1, 15, 10, 9, 8, 7, 6, 5, 4, 3, 
+            2}}]]}, {}, {}}, {{}, {}, 
+         {Hue[0.67, 0.6, 0.6], 
+          LineBox[{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14}]}}}],
+      AspectRatio->0.2,
+      AxesOrigin->{3.1*^9, 0},
+      Epilog->{
+        LineBox[
+         NCache[{{3313526400, 0}, {3313526400, 1000}}, {{3.3135264*^9, 0}, {
+           3.3135264*^9, 1000}}]], 
+        LineBox[
+         NCache[{{3218832000, 0}, {3218832000, 1000}}, {{3.218832*^9, 0}, {
+           3.218832*^9, 1000}}]]},
+      FrameTicks->None,
+      GridLines->{{}, None},
+      ImageSize->120,
+      PlotRange->{All, All},
+      PlotRangeClipping->True,
+      PlotRangePadding->{Automatic, Automatic},
+      Ticks->None,
+      ImageCache->GraphicsData["CompressedBitmap", "\<\
+eJy1VftTlFUY/mCXFSQNEcWkUcZptNGSv6CpqSlTEzNlDJB0RWgpL7gwKaOj
+o3mJIkl/yOSihOACCygLSAq4SKALeFku7i5DNrlasTAOzQiTEvB03pfDzE6D
+rvtD38x3znnP5Xkv53nfs0qbqkvYpk1NiteGL9Nrk3VJ8Snh7+3QiymVj6Io
+aeKfG66oxRhi6NakQXz/7ZZyp4LdbkdkZCRLGm6nYWjoCVosTty88QAW0Tc3
+/YYG813U1vag5mI3TCYbyko7UVfXA4ejD4ODTxQ/iUdYhEmSL7dq9PcP4lrz
+PfyYdxN791wKQEy0QWzdEFNEI5Y0k8z5PWNf1qkWyE/xGfeItb2Gbke/WK+4
+YMaiRUtY8uM2FJbrTsR8bEBiQjkSt5QhSXceWz+vQPL2SqTqq7HrixrsSbuE
+A/vroE+uQqzQ++47OVi5/Ay0G428fizjZ5zNv4UFC17FkUNFOHrYTDhCudgl
+XE369Dx+OGlBfd0vuO/8yx9O54AwRwxpxJJmkjm/Z+x7+HDouV1VyzlSvzoy
+HyeONyuBfCaQVtDach9VlXaczm3DV0fM7GZQ0DwR1BP4NqMRxuIOunlliQc9
+KtmWl3VxeAoLbivBkgERERGwWq0sve6GE+BmW75gAknhk2D7yrncnDZ8sCIP
+1VUOZaYH7Cl8RgNThQ2f6S5g1co8xMUWY/++WnR19s7n5SnuavhPP9qAtWvO
+UtiVEA8qxkM7FXZbH84VWvHJhmJErStEbnYbhodH0NH+J1J2ViF6vYGSZZ60
+aELlnS4XUlOqsUkQaWDg71ketPnK48J45vq6jwr4aLGhHWNjYyqZWeQE3eXy
+ZaeRndUawqemsy2UNXHCxt27avBdZhOKzllhvnKXDaFjZNjChYuxZXMpdu6o
+xOPH/8z2YNR4JsFY0sEXQ7kjyKT4S2MaG35FbHQR59PtW7/PkMY47H2ccsS3
+KpMdOdmtOPzlFWwTxymAb7+Vxe6tj8pEcPB8HDpYTy6GejKGOcgsEW5JlqvZ
+vYMH6vGhYL9gTpAkk0gEbN5kxMjIqCxVatjuuHBV2JyeXoKwsFdeerrCGW7e
+lxo72fuMrxsJQZTLcQ21l3uw4v0z6O19JCOiYhiCI2nO0+FnSoMoO7dvNXFg
+xcUHSmS6zai1BZQ4SoB3yCFuPNELcuoSy9HZ0TtVIlO12y2qGm3yEnmWRKZ0
+IIrFa0vRbv3DXyIbBNsos4aGhkXOeIU8WyITb/btvYyNcSVEJ41EpipOJcdu
+c8lLf27kULdoEAPpMbjR9mCiaJIrCfFlyDzWpLzgHfIcN+Rv0q8KLhdSHZ0o
+kwKRkUdHx7xFHmclhxXHRRpTUOktJfmnmm4Ohcv1aJp3qHO545Di5PcWrFmd
+j+vX7jG6SInp3qGFuXlP5fDNN07Rw/iidygvyyVCoTpOkpcQS//X7YrPv30D
+Ndw=\
+\>"]]},
+    {"\<\"29\"\>", "\<\"bureau francais paper tile companies preservation \
+trading pulp universities managers valley ourage beaver usage\"\>", 
+     GraphicsBox[
+      GraphicsComplexBox[{{3.0610656*^9, 0.00683709018198474}, {3.0926016*^9, 
+       0.00212466184119373}, {3.1241376*^9, 0.00303001337112089}, {
+       3.1556736*^9, 0.}, {3.187296*^9, 0.00968194514514483}, {3.218832*^9, 
+       0.00762741001694959}, {3.250368*^9, 0.00250833085951056}, {3.281904*^9,
+        0.0190875444699509}, {3.3135264*^9, 0.00304801475704441}, {
+       3.3450624*^9, 0.00212888199717055}, {3.3765984*^9, 0.000945}, {
+       3.4081344*^9, 0.}, {3.4397568*^9, 0.000218}, {3.4712928*^9, 
+       0.000899}, {3.0610656*^9, 0.}, {3.4712928*^9, 0.}}, {{{}, 
+         {Hue[0.67, 0.6, 0.6], Opacity[0.2], EdgeForm[None], 
+          GraphicsGroupBox[{PolygonBox[{{12, 16, 14, 13}}], 
+            PolygonBox[{{1, 15, 4, 3, 2}}], 
+            PolygonBox[{{4, 12, 11, 10, 9, 8, 7, 6, 5}}]}]}, {}, {}}, {{}, {}, 
+         {Hue[0.67, 0.6, 0.6], 
+          LineBox[{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14}]}}}],
+      AspectRatio->0.2,
+      AxesOrigin->{3.1*^9, 0},
+      Epilog->{
+        LineBox[
+         NCache[{{3313526400, 0}, {3313526400, 1000}}, {{3.3135264*^9, 0}, {
+           3.3135264*^9, 1000}}]], 
+        LineBox[
+         NCache[{{3218832000, 0}, {3218832000, 1000}}, {{3.218832*^9, 0}, {
+           3.218832*^9, 1000}}]]},
+      FrameTicks->None,
+      GridLines->{{}, None},
+      ImageSize->120,
+      PlotRange->{All, All},
+      PlotRangeClipping->True,
+      PlotRangePadding->{Automatic, Automatic},
+      Ticks->None,
+      ImageCache->GraphicsData["CompressedBitmap", "\<\
+eJytVmlQlWUUvnolViWmH2E5xDSa0zTKr6ZftqhpbqCmWS4lIgg1iiCMYoqI
+5QImpqUIKHuA7MgOsoOoyI5sEwoZKuo01iCOjD2dc+7L9dOYSZm+mfvd7z33
+fc95zjnPeb67xNnH3XWzs4+Hi7P9fG/nre4eLtvs53l6k0k/TqfT+dHnNXvd
+BHoGPWpufqDr2a/X5WsCbt/6C6cjLmP50ljcvTNoLWY92tvb4ejoKCtbZeM1
+23n1stwnY2hoGH19f+BK3Q3k53ciNqYeR36oxE6/fLi6pGLdmiQ4f5UMt42p
++MYjA55bzsFnWw78duTDf1ch9gWel/0MISWlBUVF3bh86Td0dd4RaA8fDhNI
+QTyevyzQ2XGHsHS0D/CTrMzlboa6yzcQerIWLs4pWLwwCsGHylFHuBZ+Eon8
+vM5J6mhmRimmT39HVrbKxmu2Gxzx/U20Xx1AddV1ZKS3ITzsEvZ/XwqvrdlY
+uzoRC+afwcdzIrD68wR4bs6SNDh0KqVQUd5DZ29LWbq778pzU9NNKVFtbR8q
+K66htORXxEbXI/RELQ4HVSDAvwg+3jlwd0vDGvLv5BiDOR+FY/euQr0mezOV
+b1vrbZyko1+7Z2APHQ05UoXIM3VIT2sT1w31/XSA95qisaFffvNwT8e8uafh
+S9VPTmrG8PBjg1NKPyW5RSpWXtajmzhKmV5StosEn3zLylrurxhLxx3hzhUX
+diP5bLOUjDvATODOr1geh9kfhmEppcbMYHsIdT4utgEF+V2ov/K7kWncWc6R
+V+M1+Rtw2EgsPrd8WazUgOOd/PmCtGi7by7cXNOwamW85Dt3djg9/yLPW6hV
+fI5ZZaIGgGNFUX2WOcVwflajpC+b6ABDOhpShQ9mnZJOEQxVBitYW9vh/VmB
+kuKiBZHCDE77W78CBAeVI4LKwWWmErOfqZqsTFSQTCIaz8u6tUnIyrxqqgHY
+TPwpK5XGmmvMPxKYL1YlsNlyFNx61TwuD5ef06+uvI4N65MRHXVlkoqbmNAE
+S8spiIzMRWvLrRkaaHq1pZjG0mNTOj6lgsfHNbyqwbB3TzE2bkjhkxZqfjQY
+5FNRfk1q8dmKeKSlto6wLjurXWSHyqGzUoF46FbStmlT30ZjY+NMDRYDC2WM
+fH1yha88csTjyQoO08LbKxtbSWTIkbmagBE4TY03sf+7EtGD48dqZAL0GsYx
+k8ijEUvYqYvYRExycHD4FxZD7gGUO4/vgwePpihHzBGmH4mbEiYTUoUS2Nm9
+BcfF0dixPQ/37g1SMob9RTQuSxZFoaX5ls5C7edus41FUAXXPRXdgHdw8JGs
+7JStqbFfxOlwcIWirKlMK9Pu4IEyuFCX3nvXHzY2byAvt5Ma9cSXNwkbsckI
+gXyIUvD1DAQDda1k2HkAfzpeI7LPQsSsZ11kuQ86WE6C1ErsK2YXFipaBQ0A
+d4A1ykwRlF2xpPb3/6mNqAJOU93n/NZ/eVb6xP0jTecejrSQDshBXplrUttJ
+r5pDB8qMwfbsLsK+vecxcj0dbOYo3kagX6jpFZgE1yiJzG1O5/79IWNzlEdZ
+zfhvtwwyMKCYJ8no1svzHA+aRgGf262lsvHrkNHWVPcqOui57XBaEi0CqH8x
+t1bKxm1lEj8RGL28cXNzOtSOMbnl1xTrZllpj3p16ZGU2CTy9vjx3+pPwHO7
+nag4c+xotdSSa8zawm+F2gu9JmPxZsIaJ4NZWNAlgk40Nw7yc7qaJHcSl1CD
+uLAmdHQMjMmLXlLitxH9xdKZvpiLkX96XBl1vWgutv/bdt24fwDVxyto\
+\>"]]},
+    {"\<\"31\"\>", "\<\"persons operational cleaning guiding regiment \
+migration paint settlers latin emigration carter printing township\"\>", 
+     GraphicsBox[
+      GraphicsComplexBox[{{3.0610656*^9, 0.000269}, {3.0926016*^9, 0.}, {
+       3.1241376*^9, 0.}, {3.1556736*^9, 0.}, {3.187296*^9, 0.000362}, {
+       3.218832*^9, 0.000335}, {3.250368*^9, 0.000494}, {3.281904*^9, 
+       0.00106692220215595}, {3.3135264*^9, 0.000442}, {3.3450624*^9, 
+       0.000428}, {3.3765984*^9, 0.0000224}, {3.4081344*^9, 1.22*^-6}, {
+       3.4397568*^9, 0.}, {3.4712928*^9, 0.0312439576952032}, {3.0610656*^9, 
+       0.}, {3.4712928*^9, 0.}}, {{{}, 
+         {Hue[0.67, 0.6, 0.6], Opacity[0.2], EdgeForm[None], 
+          GraphicsGroupBox[{PolygonBox[{{1, 15, 2}, {13, 16, 14}}], 
+            PolygonBox[{{4, 13, 12, 11, 10, 9, 8, 7, 6, 
+             5}}]}]}, {}, {}}, {{}, {}, 
+         {Hue[0.67, 0.6, 0.6], 
+          LineBox[{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14}]}}}],
+      AspectRatio->0.2,
+      AxesOrigin->{3.1*^9, 0},
+      Epilog->{
+        LineBox[
+         NCache[{{3313526400, 0}, {3313526400, 1000}}, {{3.3135264*^9, 0}, {
+           3.3135264*^9, 1000}}]], 
+        LineBox[
+         NCache[{{3218832000, 0}, {3218832000, 1000}}, {{3.218832*^9, 0}, {
+           3.218832*^9, 1000}}]]},
+      FrameTicks->None,
+      GridLines->{{}, None},
+      ImageSize->120,
+      PlotRange->{All, All},
+      PlotRangeClipping->True,
+      PlotRangePadding->{Automatic, Automatic},
+      Ticks->None,
+      ImageCache->GraphicsData["CompressedBitmap", "\<\
+eJylVVlPU1EQvtyyJPgHjFtQcUlceDY+GF9wIcRoNAb3iigoiCKgiAEEURDE
+JYqIQisqUClIoYCsLa1CFYqVraAoWtxQoybGF18+Zw73wfjmbZPOmfluz9eZ
+78ycG65NjI6K0ybGRGqD1iRoj0THRB4LCo1PIEjjI0lSCn1nBEm+5IPcv0wK
+6PPvohFLIIzGASQlNiLhqBnxcXU4FFOLA/trsC+yGnt2V2HndgO2R1QGYFtE
+BW3asa2SPRH5CxvIj7FzhwGRWqPYGnvIhKPx9UhOakRqSjMy0luRfaZDRnYW
+mTOZ7TKyMtulOcg83Y64WB0WL1rBMM5mW5Bzzoq83E5cyLfhYoEdly89xtUr
+XSi67oBe14uKchce1AyisWEElo5X6Hr8Fn3O93APT2Kg/yN6nk7AZhtHS/ML
+1JmGYTA8p31OsX/pkpU4nnxXRsEFux8K8u3SNHZx7qwFmRltOJXaTM+bRPKx
+B03YH1UDLWtAxZEOU+VruF5yWQVFDUUJDVavKsbk5E9FWqGzLJZpGB35graW
+lzBWDaCmehCm2mGY691oahwVuY6NfcWb8W+YmPghBcDj+U50E54f7InIX9hA
+2Kk2rruVuHhvfZ2b9BhC1f1+VJI2d8r6cFvvlKEv7ZW5cplDErtM7ySRKzB7
+9gIhiK6kFyU3e3Cz+CluFD3B9UIHrl3tFmJfIdHP53SKQ0k71YITLMoRs2iO
+KG6MXfeFMNF02oepaZKONSD1ZLM40NwcKy5dfIRZM4MJuyOjqNDhx/KTCMX0
+P6UlPSi73Yfyey5UGfpF8mYq4mHTKNpaX6LT+hpWyysq32p5reGQXBuBts5x
+XklRsr6KRMzEbUrykmxkp/paWi4WDVwuF0JCQkQ0XcE4ZpyjIAVzD3/G5k13
+0WAeUcUzV8G4wsOxdSIffy94Bgc+IWydTpSvhmeeguXn2cQMcj5+XvA4e99h
+bWgpj5cqnvkKlp7WKkac8/H1gueR/Q3Wr9Wh//lHr3h4LLmzC691q+IJVjDu
+3o0byriPplhV8nA++/YaeYxV8SxQMJ4svrpZZ9kLnhH3Z2zdUg7TgyFVPAuF
+9UXJrR4cjK4V9alnGRqcRHiYHh3tYypYFikY3058zbM2Kime9X0Q4+Do9vwv
+xWIFy6K7kl6IIpLVUTxxeMQr6Nev36oo1BzoMlU/l3z+AFOMqX0=\
+\>"]]},
+    {"\<\"34\"\>", "\<\"religious irish missionaries music policy church \
+methodist police labor welfare trade executive\"\>", 
+     GraphicsBox[
+      GraphicsComplexBox[{{3.0610656*^9, 0.0115083769356799}, {3.0926016*^9, 
+       0.00539002784647049}, {3.1241376*^9, 0.0158185433764601}, {
+       3.1556736*^9, 0.0136277673167128}, {3.187296*^9, 
+       0.00756737032281682}, {3.218832*^9, 0.00175059640416711}, {3.250368*^9,
+        0.0385989940251954}, {3.281904*^9, 0.00538894306944245}, {
+       3.3135264*^9, 0.00656522465152811}, {3.3450624*^9, 
+       0.00310003768479449}, {3.3765984*^9, 0.00151644564122213}, {
+       3.4081344*^9, 7.75*^-7}, {3.4397568*^9, 0.00205609061029669}, {
+       3.4712928*^9, 0.00125328387494984}, {3.0610656*^9, 0.}, {3.4712928*^9, 
+       0.}}, {{{}, 
+         {Hue[0.67, 0.6, 0.6], Opacity[0.2], EdgeForm[None], 
+          GraphicsGroupBox[
+           PolygonBox[{{1, 15, 16, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 
+            2}}]]}, {}, {}}, {{}, {}, 
+         {Hue[0.67, 0.6, 0.6], 
+          LineBox[{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14}]}}}],
+      AspectRatio->0.2,
+      AxesOrigin->{3.1*^9, 0},
+      Epilog->{
+        LineBox[
+         NCache[{{3313526400, 0}, {3313526400, 1000}}, {{3.3135264*^9, 0}, {
+           3.3135264*^9, 1000}}]], 
+        LineBox[
+         NCache[{{3218832000, 0}, {3218832000, 1000}}, {{3.218832*^9, 0}, {
+           3.218832*^9, 1000}}]]},
+      FrameTicks->None,
+      GridLines->{{}, None},
+      ImageSize->120,
+      PlotRange->{All, All},
+      PlotRangeClipping->True,
+      PlotRangePadding->{Automatic, Automatic},
+      Ticks->None,
+      ImageCache->GraphicsData["CompressedBitmap", "\<\
+eJytVolTVlUUf/qxSAUINKOVMzDNlE1N+hdUjqm4AK6kZqhIFKaICqjgUokU
+KEmWCy7sm6zJJqKDKLuI8AHqB427IEuTMwyZyvbrnPNdBKlsYLoz373fe+++
+3/mdc37n3Ofs7ufl6e3ut9bD3cFxs/tGr7Uevg6zfDbTLd0YTdMC6Pe6g2ZC
+/0F/h0wBoDF8mSKLDgaDAU5OznI1Ud1zcXGR+3xlJbMtnj7tRVtbFwzX21Fe
+dhd5eY1ITKjFwZ/LsWd3IXw358HDPR2eHhkIDDiDA+GlSE7S43zhDVxtaENH
+xx/o6+s3FThTPH7cg4cP/0RLSydu3vgdzc2dZFiYjeXlXTQ1/qaZ4HLVfRyL
+uIQZ04NhZ+fwmtzWYfLk95B1qkiuTGW2RVnJHZwki7w9bG8xdu04i40bcrBm
+dRqWLEqA48xITJ92DAvnx8HtsxSsW3sK27bkI3jPefx0oAwxUdXISG8Yi7MF
+v2rmAnXoYAWCyLlNG3OxemUqXJxiGYIoEqA2Dk5zYzBrxgl89MFRYngc8+ZE
+Y9HCeCxfmozwH0qGOmShmHMsykrvyNUbMo/Dpcp7iDhcKbGbPSsS/r55CA1J
+hY2NPRLja61VLK5dbUcpOVlzpQWNhg6j3zbPYkG3UHzxNuLjasSnLz0zCS0K
+813i4OOdjR3bC7A35KJYSqLM5WYbUHzhFmprWrTxwtScEcVMSfFt+VVduo86
+/QPGJp6D3piJbXNSQwcyM65i29Z8oy3nWBz4sYwxtAmy52Xx7vChClHHHMco
+bPU/jdSUelEUD71eD3v7t/HpsmTNWvnECuK9jDntw6OycmDdVqSIX5yQCRPe
+pFyGUQIisWhBPDb55HDQOYeovtysvTOEr05x4Rjl5hjw9c5zkqxVbqk4RApm
+jhXld7F+XRZcFyewT5qd8pGwEHGkEh5r0jF3drT4mp7WgO7uXkoK2zARHzgP
+K5afRFpqvaW8aomU5Dp2C/39/RJaDhdnj7NIKsMvmdekiCZNegvh+zP4mfb+
+ENoqI1xvnFHOpJIWq11ZFx0Io8UUoQ2UaX5mpdizucjjl+H1RaZUgL/faaRR
+9Ht7++jpIPupU6cKFfdVaa8oqTLbZZ8kcWBU8nWyjbfz1XNMTYTFd8FFCPn+
+AooKb1oociyn8P2lks59oRfRUN+mWShy9XWtiI25gvVfZQk5TmtSoh5PnvRo
+L6n3B8gxG9clicjOuk6JNDLkkmVZ8c4XMLSRZTwqK+7Bd1OudABWYJ2+VfoT
+x+MIVUVw0HmhsJK6A6tj5scn4E2KiIutwaNH3ZbDGPGIjqzm0BJbIyP2luHr
+61s1i39nZCuLBJodkqxyA1nqmiR9iXsXd9CE+Frkn26SNtjT02csU7PnGFy/
+1o4FJIwz+U0DPYarjZXMm19A4tWBI4AiqwYV7d8t8OCmQdIapyxw5Lj5UetW
+ifpHC1OUiIejcRN0nhfDwTdKnF4P21eMLSROfuM/IXVDIZUCddJ5uHcOngo6
+qV6u2gctnSSbUcFyA2Q5UEN8Bhv0bSG+2XVOdowQVqdmLobtgQUK0DhzD+JC
+oaOR1DEqWC54hiCxP4MN3HYGx49VKdGNCNZEpZDP+N3kNCuWfxeKbklQurqe
+apajgTSTpstMOUUMyYc1fTJYjQ6NEXZS2YRS+6FakKOI+sgI0UwVJn9MsGw+
+p6afk22wHh0Kc1q9Kk2+D+jjZ4QoZuoeo6ihjRBi4v+2XRvzF0h/8t8=\
+\>"]]},
+    {"\<\"45\"\>", "\<\"economic east production nova saint canadians wages\"\
+\>", 
+     GraphicsBox[
+      GraphicsComplexBox[{{3.0610656*^9, 0.0363503367804145}, {3.0926016*^9, 
+       0.0331158726665565}, {3.1241376*^9, 0.0461689360885233}, {3.1556736*^9,
+        0.028835176913025}, {3.187296*^9, 0.0434172273670112}, {3.218832*^9, 
+       0.039375405610471}, {3.250368*^9, 0.0291833039958858}, {3.281904*^9, 
+       0.0286250234162782}, {3.3135264*^9, 0.0389971694361455}, {3.3450624*^9,
+        0.0238077881320256}, {3.3765984*^9, 0.0232466970354918}, {
+       3.4081344*^9, 0.0264399276047229}, {3.4397568*^9, 
+       0.0155432904851786}, {3.4712928*^9, 0.00496241152810234}, {
+       3.0610656*^9, 0.}, {3.4712928*^9, 0.}}, {{{}, 
+         {Hue[0.67, 0.6, 0.6], Opacity[0.2], EdgeForm[None], 
+          GraphicsGroupBox[
+           PolygonBox[{{1, 15, 16, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 
+            2}}]]}, {}, {}}, {{}, {}, 
+         {Hue[0.67, 0.6, 0.6], 
+          LineBox[{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14}]}}}],
+      AspectRatio->0.2,
+      AxesOrigin->{3.1*^9, 0},
+      Epilog->{
+        LineBox[
+         NCache[{{3313526400, 0}, {3313526400, 1000}}, {{3.3135264*^9, 0}, {
+           3.3135264*^9, 1000}}]], 
+        LineBox[
+         NCache[{{3218832000, 0}, {3218832000, 1000}}, {{3.218832*^9, 0}, {
+           3.218832*^9, 1000}}]]},
+      FrameTicks->None,
+      GridLines->{{}, None},
+      ImageSize->120,
+      PlotRange->{All, All},
+      PlotRangeClipping->True,
+      PlotRangePadding->{Automatic, Automatic},
+      Ticks->None,
+      ImageCache->GraphicsData["CompressedBitmap", "\<\
+eJy1VvtP1WUYP3IAwTBN2hBpjZnL0pK/oFWyvKWgJkhaKiII85IiTTEr5ihR
+S7FlKipyv8hNkLgFAnGX2yEuB0wcqGDRmGOLKSP49DzP9z3sW/FDna2zfW/v
++b6f9/l8ns/zvN91/mHBgfv8w0IC/N1XhvofCA4JOOS+4qNQGjLOMBgM4XQs
+cDfY0j3oVncKB/3+flkmFyPMZjO8vLzkab4a42ce56fXtddt+PIaerp/o/9z
+b5Rj8eKl8jRfjfEzj/PTEj4brZj4ihrLzGjHma+qBMHGCpyX5WyLrMx2bP/w
+Ovw2p6Ck+I41IS2Ssx2yMzuwYxtB+aYgOakVk5OTtMB/x1towcsivO0ZGl6i
+hmdvBZ67wsvJ7hS8zT4pSCK8iYlJg4MVeC8qvPw8MwJ2ZhJe8hTeLCvwXlB4
+RYU9CNmdg43rExEX2yR8nazAs5fzM2htGeQ7OTo7fkWb6RGamx6iof4+aqr6
+UFlxDz/SYe4aMjiqGMpK72L/3jx4r4tHzKUGjI9PGJ61IgY79U98XDNWr4yF
+59uX8eYbl7D8rRi843lFxrzWxgtXn03J8KWD32Et9+/LwxeRt3D1ciPyb5rR
+1PhQOHCsoQfysXZNHM5/W4exsT/m6kJzU2HoaFPo/wx3jhpjSSzv2U9Dwaj+
+aTMN4uOwArFNfW0/Otp/Qbd5SHOik0DwUHlZL1JTTIg+W40jhwvhT05jlqtW
+xErE56Jr8PTp+DxdxAtUDd5ueICt76fhwnf1jDxd0JqesyUYXiE4KAdBu7Kw
+c0cGtn2Qji1+qaIh68m6vrv6muhIJT0tORu1dGFBj8z59FgJRzdXtTcmxVYZ
+HR0zPK+L2FFBUZQwtQ6qoDSdaCl4eyXg6pVGaQO7A7NRX3d/9jRsNGmfQ0vz
+AE6fqhSdWGKu0NycTsk6VwO7saL8nriVXcvvXzhfJwz3hNzg6IkDY83Us2NH
+48zXVaJ7emqb4VUdBW1tR1GyuOgOEsihp6IqxVmsIrtwPdFISTZp2aUekZjQ
+IoqmpbYxhOCfJfw1q67xfCcFqaMoR+PtB/iSjMz0joYXobqqj8qSQ7ET98Vc
+bMAG7wRJJlFWSbGfosJu20UNhhM9NPT7Eh0Lzdn4hkzFYnBJbd2ShkMH83H6
+ZCUS41skHz+1PZIrt1AWrKa6z0FlnlMYdaJCst97d9io4mLU0pKfZcZBkoRc
+QE1Nk9jCj+OK+LxUrB3x2Q+oq+2nquL5s4QXF+7GDYkIDMiiOV0yJ+pEukjI
+5qVGuVTPRVKI8lu9jMRtb6ZOpHM0gQXkifSsKsFW8rd3T64I9PjxE3uFxKUY
+ebxMVKE90kFJWlvTj5NR1+HislDQuL8MD486yyx7SSi3XJ/3kuDs7A7P5ZFs
+QLWzz1HYpJ6oyJ2A8mVUkbA7efvkGqJ+qW0p0mVwk7YIzvCxT4qFDK/DPNl0
+HGUQ1YilFfr5RsPV9SWMjDwxuFg+Peh9N7dFqKtrVJ8jBq1EhZf0G5569EgR
+tb0B5OV2icgXL9Q7qfbEMoUfLhJrs0uYYSi5hOXkDZs9yj+TyQQPDw9XtTDd
+ypDu+2aeSgpvI8cjSoUXFxgtqrYIrW9wEdOqaqs2WpD/8vk0DbyzDqLg+24M
+DIxMvf4vIZb9r68bZvwJpkvF3A==\
+\>"]]}
+   },
+   AutoDelete->False,
+   GridBoxBackground->{"Columns" -> {{None}}, "Rows" -> {
+       GrayLevel[0.85]}},
+   GridBoxFrame->{"Columns" -> {{True}}, "Rows" -> {{True}}},
+   GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+  "Grid"]], "Output",
+ CellChangeTimes->{
+  3.552655923709836*^9, {3.552929904328177*^9, 3.552929937302984*^9}, {
+   3.5529300080951223`*^9, 3.552930017225245*^9}, 3.552930084425172*^9, {
+   3.552930197974231*^9, 3.55293020688346*^9}, {3.552930242660939*^9, 
+   3.552930252715975*^9}, 3.55316636873696*^9, 3.5531664101065273`*^9, {
+   3.553166485242893*^9, 3.553166520579527*^9}, 3.553167456992669*^9, 
+   3.553167584583222*^9}]
+}, Open  ]]
+},
+WindowSize->{898, 1102},
+WindowMargins->{{Automatic, 564}, {Automatic, 13}},
+FrontEndVersion->"9.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (November 20, \
+2012)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[557, 20, 102, 1, 28, "Input"],
+Cell[662, 23, 16116, 319, 1695, "Input"],
+Cell[16781, 344, 11539, 299, 2545, "Input"],
+Cell[28323, 645, 97, 1, 28, "Input"],
+Cell[28423, 648, 209, 6, 28, "Input"],
+Cell[28635, 656, 98, 1, 28, "Input"],
+Cell[CellGroupData[{
+Cell[28758, 661, 273, 5, 63, "Input"],
+Cell[29034, 668, 220, 3, 46, "Output"]
+}, Open  ]],
+Cell[29269, 674, 98, 1, 28, "Input"],
+Cell[CellGroupData[{
+Cell[29392, 679, 267, 5, 63, "Input"],
+Cell[29662, 686, 214, 3, 46, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[29913, 694, 254, 5, 28, "Input"],
+Cell[30170, 701, 203, 3, 28, "Output"]
+}, Open  ]],
+Cell[30388, 707, 103, 1, 28, "Input"],
+Cell[CellGroupData[{
+Cell[30516, 712, 248, 4, 63, "Input"],
+Cell[30767, 718, 192, 2, 46, "Output"]
+}, Open  ]],
+Cell[30974, 723, 99, 1, 28, "Input"],
+Cell[CellGroupData[{
+Cell[31098, 728, 202, 4, 28, "Input"],
+Cell[31303, 734, 150, 2, 28, "Output"]
+}, Open  ]],
+Cell[31468, 739, 101, 1, 28, "Input"],
+Cell[CellGroupData[{
+Cell[31594, 744, 174, 3, 28, "Input"],
+Cell[31771, 749, 120, 1, 28, "Output"]
+}, Open  ]],
+Cell[31906, 753, 100, 1, 28, "Input"],
+Cell[CellGroupData[{
+Cell[32031, 758, 246, 4, 63, "Input"],
+Cell[32280, 764, 189, 2, 46, "Output"]
+}, Open  ]],
+Cell[32484, 769, 101, 1, 28, "Input"],
+Cell[CellGroupData[{
+Cell[32610, 774, 247, 4, 63, "Input"],
+Cell[32860, 780, 191, 2, 46, "Output"]
+}, Open  ]],
+Cell[33066, 785, 95, 1, 28, "Input"],
+Cell[CellGroupData[{
+Cell[33186, 790, 228, 4, 46, "Input"],
+Cell[33417, 796, 174, 2, 28, "Output"]
+}, Open  ]],
+Cell[33606, 801, 99, 1, 28, "Input"],
+Cell[CellGroupData[{
+Cell[33730, 806, 182, 3, 28, "Input"],
+Cell[33915, 811, 130, 2, 28, "Output"]
+}, Open  ]],
+Cell[34060, 816, 94, 1, 28, "Input"],
+Cell[34157, 819, 2138, 57, 97, "Input"],
+Cell[CellGroupData[{
+Cell[36320, 880, 3375, 79, 131, "Input"],
+Cell[39698, 961, 36819, 707, 457, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)

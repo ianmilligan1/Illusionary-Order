@@ -1,0 +1,1215 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 8.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[     49284,       1206]
+NotebookOptionsPosition[     48484,       1177]
+NotebookOutlinePosition[     48842,       1193]
+CellTagsIndexPosition[     48799,       1190]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[TextData[{
+ StyleBox["Ten Percent TrimmedMeans[]\n", "Title"],
+ StyleBox["Ian Milligan - 3 October 2012", "Subtitle"]
+}], "Text",
+ CellChangeTimes->{{3.558282144065502*^9, 3.5582821585291653`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"TrimmedMean", "/@", "globeDataSet"}]], "Input",
+ CellChangeTimes->{{3.55827970245644*^9, 3.558279705803762*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   FractionBox["98", "79"], ",", 
+   FractionBox["26", "61"], ",", 
+   FractionBox["22", "15"], ",", 
+   FractionBox["100", "63"], ",", 
+   FractionBox["163", "67"], ",", 
+   FractionBox["29", "24"], ",", 
+   FractionBox["64", "27"], ",", 
+   FractionBox["82", "59"], ",", 
+   FractionBox["342", "65"], ",", 
+   FractionBox["145", "63"], ",", 
+   FractionBox["284", "57"], ",", 
+   FractionBox["226", "31"], ",", 
+   FractionBox["15", "4"], ",", 
+   FractionBox["221", "63"]}], "}"}]], "Output",
+ CellChangeTimes->{3.5582797061785307`*^9}]
+}, Open  ]],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"globe10", "=", 
+   RowBox[{"{", "}"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"Do", "[", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"AppendTo", "[", 
+       RowBox[{"globe10", ",", 
+        RowBox[{"TrimmedMean", "[", 
+         RowBox[{
+          RowBox[{"globeDataSet", "[", 
+           RowBox[{"[", "x", "]"}], "]"}], ",", "0.10"}], "]"}]}], "]"}], 
+      ";"}], "\[IndentingNewLine]", ",", 
+     RowBox[{"{", 
+      RowBox[{"x", ",", 
+       RowBox[{"Length", "[", "globeDataSet", "]"}]}], "}"}]}], "]"}], ";"}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"star10", "=", 
+   RowBox[{"{", "}"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"Do", "[", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"AppendTo", "[", 
+       RowBox[{"star10", ",", 
+        RowBox[{"TrimmedMean", "[", 
+         RowBox[{
+          RowBox[{"starDataSet", "[", 
+           RowBox[{"[", "x", "]"}], "]"}], ",", "0.10"}], "]"}]}], "]"}], 
+      ";"}], "\[IndentingNewLine]", ",", 
+     RowBox[{"{", 
+      RowBox[{"x", ",", 
+       RowBox[{"Length", "[", "globeDataSet", "]"}]}], "}"}]}], "]"}], ";"}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"telegram10", "=", 
+   RowBox[{"{", "}"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"Do", "[", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"AppendTo", "[", 
+       RowBox[{"telegram10", ",", 
+        RowBox[{"TrimmedMean", "[", 
+         RowBox[{
+          RowBox[{"telegramDataSet", "[", 
+           RowBox[{"[", "x", "]"}], "]"}], ",", "0.10"}], "]"}]}], "]"}], 
+      ";"}], "\[IndentingNewLine]", ",", 
+     RowBox[{"{", 
+      RowBox[{"x", ",", 
+       RowBox[{"Length", "[", "globeDataSet", "]"}]}], "}"}]}], "]"}], ";"}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"gazette10", "=", 
+   RowBox[{"{", "}"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"Do", "[", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"AppendTo", "[", 
+       RowBox[{"gazette10", ",", 
+        RowBox[{"TrimmedMean", "[", 
+         RowBox[{
+          RowBox[{"gazetteDataSet", "[", 
+           RowBox[{"[", "x", "]"}], "]"}], ",", "0.10"}], "]"}]}], "]"}], 
+      ";"}], "\[IndentingNewLine]", ",", 
+     RowBox[{"{", 
+      RowBox[{"x", ",", 
+       RowBox[{"Length", "[", "globeDataSet", "]"}]}], "}"}]}], "]"}], ";"}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"citizen10", "=", 
+   RowBox[{"{", "}"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Do", "[", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"AppendTo", "[", 
+      RowBox[{"citizen10", ",", 
+       RowBox[{"TrimmedMean", "[", 
+        RowBox[{
+         RowBox[{"citizenDataSet", "[", 
+          RowBox[{"[", "x", "]"}], "]"}], ",", "0.10"}], "]"}]}], "]"}], 
+     ";"}], "\[IndentingNewLine]", ",", 
+    RowBox[{"{", 
+     RowBox[{"x", ",", 
+      RowBox[{"Length", "[", "globeDataSet", "]"}]}], "}"}]}], "]"}], 
+  ";"}]}], "Input",
+ CellChangeTimes->{{3.558279863132668*^9, 3.5582799057345257`*^9}, {
+   3.558279980216408*^9, 3.558280075089162*^9}, 3.5582802066799707`*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"dissertationNumbers", "=", 
+   RowBox[{"{", 
+    RowBox[{
+    "87", ",", "67", ",", "83", ",", "69", ",", "73", ",", "78", ",", "89", 
+     ",", "65", ",", "71", ",", "69", ",", "63", ",", "70", ",", "70", ",", 
+     "69"}], "}"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.545309004560261*^9, 3.545309025348*^9}}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"globeNormalized", "=", 
+   RowBox[{"globe10", "/", "dissertationNumbers"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"starNormalized", "=", 
+   RowBox[{"star10", "/", "dissertationNumbers"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"telegramNormalized", "=", 
+   RowBox[{"telegram10", "/", "dissertationNumbers"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"gazetteNormalized", "=", 
+   RowBox[{"gazette10", "/", "dissertationNumbers"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"citizenNormalized", "=", 
+   RowBox[{"citizen10", "/", "dissertationNumbers"}]}], ";"}]}], "Input",
+ CellChangeTimes->{{3.54530904924286*^9, 3.5453091067506332`*^9}, {
+  3.545309183848404*^9, 3.545309214134634*^9}, {3.545309263693549*^9, 
+  3.545309299941209*^9}, {3.558280063022274*^9, 3.558280082014801*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"yearlist", "=", 
+   RowBox[{"Range", "[", 
+    RowBox[{"1997", ",", "2010"}], "]"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.545407414611342*^9, 3.545407426269553*^9}}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"globeNormYears", "=", 
+   RowBox[{"Thread", "[", 
+    RowBox[{"{", 
+     RowBox[{"yearlist", ",", "globeNormalized"}], "}"}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"starNormYears", "=", 
+   RowBox[{"Thread", "[", 
+    RowBox[{"{", 
+     RowBox[{"yearlist", ",", "starNormalized"}], "}"}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"telegramNormYears", "=", 
+   RowBox[{"Thread", "[", 
+    RowBox[{"{", 
+     RowBox[{"yearlist", ",", "telegramNormalized"}], "}"}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"gazetteNormYears", "=", 
+   RowBox[{"Thread", "[", 
+    RowBox[{"{", 
+     RowBox[{"yearlist", ",", "gazetteNormalized"}], "}"}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"citizenNormYears", "=", 
+   RowBox[{"Thread", "[", 
+    RowBox[{"{", 
+     RowBox[{"yearlist", ",", "citizenNormalized"}], "}"}], "]"}]}], 
+  ";"}]}], "Input",
+ CellChangeTimes->{{3.545308840518592*^9, 3.5453088896474257`*^9}, {
+  3.545309305953864*^9, 3.545309314369657*^9}, {3.54534947873293*^9, 
+  3.545349486148572*^9}}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"globeTrimmedYears", "=", 
+   RowBox[{"Thread", "[", 
+    RowBox[{"{", 
+     RowBox[{"yearlist", ",", "globe10"}], "}"}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"starTrimmedYears", "=", 
+   RowBox[{"Thread", "[", 
+    RowBox[{"{", 
+     RowBox[{"yearlist", ",", "star10"}], "}"}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"telegramTrimmedYears", "=", 
+   RowBox[{"Thread", "[", 
+    RowBox[{"{", 
+     RowBox[{"yearlist", ",", "telegram10"}], "}"}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"gazetteTrimmedYears", "=", 
+   RowBox[{"Thread", "[", 
+    RowBox[{"{", 
+     RowBox[{"yearlist", ",", "gazette10"}], "}"}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"citizenTrimmedYears", "=", 
+   RowBox[{"Thread", "[", 
+    RowBox[{"{", 
+     RowBox[{"yearlist", ",", "citizen10"}], "}"}], "]"}]}], ";"}]}], "Input",\
+
+ CellChangeTimes->{{3.545308840518592*^9, 3.5453088896474257`*^9}, {
+  3.545309305953864*^9, 3.545309314369657*^9}, {3.5453494886685677`*^9, 
+  3.5453495114058867`*^9}, {3.558280225677285*^9, 3.5582802443975554`*^9}}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"trimmedData", "=", 
+   RowBox[{"{", 
+    RowBox[{
+    "globeTrimmedYears", ",", "starTrimmedYears", ",", "telegramTrimmedYears",
+      ",", "gazetteTrimmedYears", ",", "citizenTrimmedYears"}], "}"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"normalizedData", "=", 
+   RowBox[{"{", 
+    RowBox[{
+    "globeNormYears", ",", "starNormYears", ",", "telegramNormYears", ",", 
+     "gazetteNormYears", ",", "citizenNormYears"}], "}"}]}], ";"}]}], "Input",\
+
+ CellChangeTimes->{{3.545349311490337*^9, 3.5453493463087187`*^9}, {
+  3.545349439896728*^9, 3.5453494481839457`*^9}, {3.545349520310025*^9, 
+  3.5453495387334547`*^9}, {3.558283129226939*^9, 3.558283140571372*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Needs", "[", "\"\<PlotLegends`\>\"", "]"}], ";"}]], "Input",
+ CellChangeTimes->{{3.545308949181593*^9, 3.545308958149441*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"ListLinePlot", "[", 
+   RowBox[{"trimmedData", ",", 
+    RowBox[{"Joined", "\[Rule]", "True"}], ",", 
+    RowBox[{"PlotRange", "\[Rule]", "All"}], ",", 
+    RowBox[{"LegendPosition", "\[Rule]", 
+     RowBox[{"{", 
+      RowBox[{"1.1", ",", 
+       RowBox[{"-", "0.4"}]}], "}"}]}], ",", 
+    RowBox[{"PlotLegend", "\[Rule]", 
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<Globe\>\"", ",", "\"\<Star\>\"", ",", "\"\<Telegram\>\"", ",", 
+       "\"\<Gazette\>\"", ",", "\"\<Citizen\>\""}], "}"}]}], ",", 
+    RowBox[{"PlotStyle", "\[Rule]", "Thick"}], ",", 
+    RowBox[{"Axes", "\[Rule]", "True"}], ",", 
+    RowBox[{"AxesOrigin", "\[Rule]", 
+     RowBox[{"{", 
+      RowBox[{"1997", ",", "0"}], "}"}]}], ",", 
+    RowBox[{"PlotMarkers", "\[Rule]", 
+     RowBox[{"{", 
+      RowBox[{"Automatic", ",", "Large"}], "}"}]}]}], "]"}], 
+  RowBox[{"(*", 
+   RowBox[{
+   "*", " ", "this", " ", "is", " ", "the", " ", "trimmed", " ", "Mean", " ", 
+    "of", " ", "citations", " ", "across", " ", "DB"}], " ", 
+   "**)"}]}]], "Input",
+ CellChangeTimes->{{3.545308897215165*^9, 3.545308920257214*^9}, 
+   3.545308973552614*^9, {3.545309696610882*^9, 3.545309709815302*^9}, {
+   3.545309809560217*^9, 3.54530981190384*^9}, {3.545309871918727*^9, 
+   3.545309874820529*^9}, {3.5453099481445436`*^9, 3.5453099484320517`*^9}, {
+   3.545310070913101*^9, 3.545310120639217*^9}, {3.545310215047695*^9, 
+   3.54531024513131*^9}, {3.545310419430894*^9, 3.545310424846353*^9}, {
+   3.5453104636076*^9, 3.5453104646453733`*^9}, {3.545320806460107*^9, 
+   3.545320808201942*^9}, {3.5453212377287407`*^9, 3.545321241926235*^9}, {
+   3.5453493803741493`*^9, 3.5453494063744583`*^9}, {3.545349549610362*^9, 
+   3.545349551098456*^9}, {3.5454076320124197`*^9, 3.545407685815774*^9}, {
+   3.545407740278475*^9, 3.5454077594856567`*^9}, {3.545407928433148*^9, 
+   3.545407941423843*^9}, {3.549296664077332*^9, 3.549296670132967*^9}}],
+
+Cell[BoxData[
+ GraphicsBox[{InsetBox[
+    GraphicsBox[GraphicsComplexBox[CompressedData["
+1:eJxTTMoPSmViYGBwA2IQDQYm8x2qjep2X5n80B7Mt5jv8Fb62r7Et6chfJv5
+Dpa7W+N7O59A+A7zHZwreZ+aTnkO4bvMd3C9UBD0/elHCN9jvgOYbngK4fvM
+d8i8tMRzstpfCD9gvsPN5xNmJeyByofMd/AokD9Yy8IO0Rcx32HmuSSr7pd/
+IPIx8x24IAAinzDfYXvu7W25t6H8lPkOIN62XAYIP2O+A1CzzrLNUD7Qf9yz
+mTvDbuyB++/TFAV/zk9H4P6L+XF1hgf/Fbj/xC5H+qQb3oX7L1rQZM6V2peo
+/mM4BPffmvD1cXurnsL9l5863zmr6SHcfxrrF+5p+/TKHua/UDB4Cvffo4cg
+AA0/oP9UPSepeE5igfsPzFX5bw/zH+c75R39D/7Zw/zHgAws0PhA/6Vv/7Da
+cOI6uP9Q5F3Q+HD/TYD7D0U+AI0fgsYH+g8cnd8nwv03fRoIHIP7D+wdT2j4
+pcD4k+D+Q9EP9N9zh0WiZuyH4PE3T+iJpuO8RfD4Y5m6OfrH1RNw/0Hi/wY8
+/qbs0u9fy3ELLf6Owf13pENQ2a3nBjz+wNH38Ro8/iDp/To8/lDSB9B/KWDw
+Be4/iPkv4P7LAyfQh3D/pRvOPVoidhnuP0LpExJ/83D6j1e9NF4u+iCa/7bA
+/dcjYZh0pOMh3H/CPds3nVdE5D9I+jwF918c2MNX4P4LAIMHaPF3Ce4/SP57
+DPcfxLxV9gCTODaE
+      "], {{{}, {}, 
+        {Hue[0.67, 0.6, 0.6], Thickness[Large], 
+         LineBox[{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14}]}, 
+        {Hue[0.9060679774997897, 0.6, 0.6], Thickness[Large], 
+         LineBox[{15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28}]}, 
+        {Hue[0.1421359549995791, 0.6, 0.6], Thickness[Large], 
+         LineBox[{29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42}]}, 
+        {Hue[0.37820393249936934`, 0.6, 0.6], Thickness[Large], 
+         LineBox[{43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56}]}, 
+        {Hue[0.6142719099991583, 0.6, 0.6], Thickness[Large], 
+         LineBox[{57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70}]}}, {
+        {Hue[0.67, 0.6, 0.6], Thickness[Large], InsetBox[
+          StyleBox["\<\"\[FilledCircle]\"\>",
+           StripOnInput->False,
+           FontSize->Large], 1], InsetBox[
+          StyleBox["\<\"\[FilledCircle]\"\>",
+           StripOnInput->False,
+           FontSize->Large], 2], InsetBox[
+          StyleBox["\<\"\[FilledCircle]\"\>",
+           StripOnInput->False,
+           FontSize->Large], 3], InsetBox[
+          StyleBox["\<\"\[FilledCircle]\"\>",
+           StripOnInput->False,
+           FontSize->Large], 4], InsetBox[
+          StyleBox["\<\"\[FilledCircle]\"\>",
+           StripOnInput->False,
+           FontSize->Large], 5], InsetBox[
+          StyleBox["\<\"\[FilledCircle]\"\>",
+           StripOnInput->False,
+           FontSize->Large], 6], InsetBox[
+          StyleBox["\<\"\[FilledCircle]\"\>",
+           StripOnInput->False,
+           FontSize->Large], 7], InsetBox[
+          StyleBox["\<\"\[FilledCircle]\"\>",
+           StripOnInput->False,
+           FontSize->Large], 8], InsetBox[
+          StyleBox["\<\"\[FilledCircle]\"\>",
+           StripOnInput->False,
+           FontSize->Large], 9], InsetBox[
+          StyleBox["\<\"\[FilledCircle]\"\>",
+           StripOnInput->False,
+           FontSize->Large], 10], InsetBox[
+          StyleBox["\<\"\[FilledCircle]\"\>",
+           StripOnInput->False,
+           FontSize->Large], 11], InsetBox[
+          StyleBox["\<\"\[FilledCircle]\"\>",
+           StripOnInput->False,
+           FontSize->Large], 12], InsetBox[
+          StyleBox["\<\"\[FilledCircle]\"\>",
+           StripOnInput->False,
+           FontSize->Large], 13], InsetBox[
+          StyleBox["\<\"\[FilledCircle]\"\>",
+           StripOnInput->False,
+           FontSize->Large], 14]}, 
+        {Hue[0.9060679774997897, 0.6, 0.6], Thickness[Large], InsetBox[
+          StyleBox["\<\"\[FilledSquare]\"\>",
+           StripOnInput->False,
+           FontSize->Large], 15], InsetBox[
+          StyleBox["\<\"\[FilledSquare]\"\>",
+           StripOnInput->False,
+           FontSize->Large], 16], InsetBox[
+          StyleBox["\<\"\[FilledSquare]\"\>",
+           StripOnInput->False,
+           FontSize->Large], 17], InsetBox[
+          StyleBox["\<\"\[FilledSquare]\"\>",
+           StripOnInput->False,
+           FontSize->Large], 18], InsetBox[
+          StyleBox["\<\"\[FilledSquare]\"\>",
+           StripOnInput->False,
+           FontSize->Large], 19], InsetBox[
+          StyleBox["\<\"\[FilledSquare]\"\>",
+           StripOnInput->False,
+           FontSize->Large], 20], InsetBox[
+          StyleBox["\<\"\[FilledSquare]\"\>",
+           StripOnInput->False,
+           FontSize->Large], 21], InsetBox[
+          StyleBox["\<\"\[FilledSquare]\"\>",
+           StripOnInput->False,
+           FontSize->Large], 22], InsetBox[
+          StyleBox["\<\"\[FilledSquare]\"\>",
+           StripOnInput->False,
+           FontSize->Large], 23], InsetBox[
+          StyleBox["\<\"\[FilledSquare]\"\>",
+           StripOnInput->False,
+           FontSize->Large], 24], InsetBox[
+          StyleBox["\<\"\[FilledSquare]\"\>",
+           StripOnInput->False,
+           FontSize->Large], 25], InsetBox[
+          StyleBox["\<\"\[FilledSquare]\"\>",
+           StripOnInput->False,
+           FontSize->Large], 26], InsetBox[
+          StyleBox["\<\"\[FilledSquare]\"\>",
+           StripOnInput->False,
+           FontSize->Large], 27], InsetBox[
+          StyleBox["\<\"\[FilledSquare]\"\>",
+           StripOnInput->False,
+           FontSize->Large], 28]}, 
+        {Hue[0.1421359549995791, 0.6, 0.6], Thickness[Large], InsetBox[
+          StyleBox["\<\"\[FilledDiamond]\"\>",
+           StripOnInput->False,
+           FontSize->Large], 29], InsetBox[
+          StyleBox["\<\"\[FilledDiamond]\"\>",
+           StripOnInput->False,
+           FontSize->Large], 30], InsetBox[
+          StyleBox["\<\"\[FilledDiamond]\"\>",
+           StripOnInput->False,
+           FontSize->Large], 31], InsetBox[
+          StyleBox["\<\"\[FilledDiamond]\"\>",
+           StripOnInput->False,
+           FontSize->Large], 32], InsetBox[
+          StyleBox["\<\"\[FilledDiamond]\"\>",
+           StripOnInput->False,
+           FontSize->Large], 33], InsetBox[
+          StyleBox["\<\"\[FilledDiamond]\"\>",
+           StripOnInput->False,
+           FontSize->Large], 34], InsetBox[
+          StyleBox["\<\"\[FilledDiamond]\"\>",
+           StripOnInput->False,
+           FontSize->Large], 35], InsetBox[
+          StyleBox["\<\"\[FilledDiamond]\"\>",
+           StripOnInput->False,
+           FontSize->Large], 36], InsetBox[
+          StyleBox["\<\"\[FilledDiamond]\"\>",
+           StripOnInput->False,
+           FontSize->Large], 37], InsetBox[
+          StyleBox["\<\"\[FilledDiamond]\"\>",
+           StripOnInput->False,
+           FontSize->Large], 38], InsetBox[
+          StyleBox["\<\"\[FilledDiamond]\"\>",
+           StripOnInput->False,
+           FontSize->Large], 39], InsetBox[
+          StyleBox["\<\"\[FilledDiamond]\"\>",
+           StripOnInput->False,
+           FontSize->Large], 40], InsetBox[
+          StyleBox["\<\"\[FilledDiamond]\"\>",
+           StripOnInput->False,
+           FontSize->Large], 41], InsetBox[
+          StyleBox["\<\"\[FilledDiamond]\"\>",
+           StripOnInput->False,
+           FontSize->Large], 42]}, 
+        {Hue[0.37820393249936934`, 0.6, 0.6], Thickness[Large], InsetBox[
+          StyleBox["\<\"\[FilledUpTriangle]\"\>",
+           StripOnInput->False,
+           FontSize->Large], 43], InsetBox[
+          StyleBox["\<\"\[FilledUpTriangle]\"\>",
+           StripOnInput->False,
+           FontSize->Large], 44], InsetBox[
+          StyleBox["\<\"\[FilledUpTriangle]\"\>",
+           StripOnInput->False,
+           FontSize->Large], 45], InsetBox[
+          StyleBox["\<\"\[FilledUpTriangle]\"\>",
+           StripOnInput->False,
+           FontSize->Large], 46], InsetBox[
+          StyleBox["\<\"\[FilledUpTriangle]\"\>",
+           StripOnInput->False,
+           FontSize->Large], 47], InsetBox[
+          StyleBox["\<\"\[FilledUpTriangle]\"\>",
+           StripOnInput->False,
+           FontSize->Large], 48], InsetBox[
+          StyleBox["\<\"\[FilledUpTriangle]\"\>",
+           StripOnInput->False,
+           FontSize->Large], 49], InsetBox[
+          StyleBox["\<\"\[FilledUpTriangle]\"\>",
+           StripOnInput->False,
+           FontSize->Large], 50], InsetBox[
+          StyleBox["\<\"\[FilledUpTriangle]\"\>",
+           StripOnInput->False,
+           FontSize->Large], 51], InsetBox[
+          StyleBox["\<\"\[FilledUpTriangle]\"\>",
+           StripOnInput->False,
+           FontSize->Large], 52], InsetBox[
+          StyleBox["\<\"\[FilledUpTriangle]\"\>",
+           StripOnInput->False,
+           FontSize->Large], 53], InsetBox[
+          StyleBox["\<\"\[FilledUpTriangle]\"\>",
+           StripOnInput->False,
+           FontSize->Large], 54], InsetBox[
+          StyleBox["\<\"\[FilledUpTriangle]\"\>",
+           StripOnInput->False,
+           FontSize->Large], 55], InsetBox[
+          StyleBox["\<\"\[FilledUpTriangle]\"\>",
+           StripOnInput->False,
+           FontSize->Large], 56]}, 
+        {Hue[0.6142719099991583, 0.6, 0.6], Thickness[Large], InsetBox[
+          StyleBox["\<\"\[FilledDownTriangle]\"\>",
+           StripOnInput->False,
+           FontSize->Large], 57], InsetBox[
+          StyleBox["\<\"\[FilledDownTriangle]\"\>",
+           StripOnInput->False,
+           FontSize->Large], 58], InsetBox[
+          StyleBox["\<\"\[FilledDownTriangle]\"\>",
+           StripOnInput->False,
+           FontSize->Large], 59], InsetBox[
+          StyleBox["\<\"\[FilledDownTriangle]\"\>",
+           StripOnInput->False,
+           FontSize->Large], 60], InsetBox[
+          StyleBox["\<\"\[FilledDownTriangle]\"\>",
+           StripOnInput->False,
+           FontSize->Large], 61], InsetBox[
+          StyleBox["\<\"\[FilledDownTriangle]\"\>",
+           StripOnInput->False,
+           FontSize->Large], 62], InsetBox[
+          StyleBox["\<\"\[FilledDownTriangle]\"\>",
+           StripOnInput->False,
+           FontSize->Large], 63], InsetBox[
+          StyleBox["\<\"\[FilledDownTriangle]\"\>",
+           StripOnInput->False,
+           FontSize->Large], 64], InsetBox[
+          StyleBox["\<\"\[FilledDownTriangle]\"\>",
+           StripOnInput->False,
+           FontSize->Large], 65], InsetBox[
+          StyleBox["\<\"\[FilledDownTriangle]\"\>",
+           StripOnInput->False,
+           FontSize->Large], 66], InsetBox[
+          StyleBox["\<\"\[FilledDownTriangle]\"\>",
+           StripOnInput->False,
+           FontSize->Large], 67], InsetBox[
+          StyleBox["\<\"\[FilledDownTriangle]\"\>",
+           StripOnInput->False,
+           FontSize->Large], 68], InsetBox[
+          StyleBox["\<\"\[FilledDownTriangle]\"\>",
+           StripOnInput->False,
+           FontSize->Large], 69], InsetBox[
+          StyleBox["\<\"\[FilledDownTriangle]\"\>",
+           StripOnInput->False,
+           FontSize->Large], 70]}, {}}}],
+     AspectRatio->NCache[GoldenRatio^(-1), 0.6180339887498948],
+     Axes->True,
+     AxesOrigin->{1997, 0},
+     DisplayFunction:>$DisplayFunction,
+     FormatType->TraditionalForm,
+     PlotRange->{All, All},
+     PlotRangeClipping->True,
+     PlotRangePadding->{Automatic, Automatic}], {-1, -0.6180339887498948}, {
+    Left, Bottom}, {2, 1.2360679774997896`}], GraphicsGroupBox[{
+     {GrayLevel[0], 
+      RectangleBox[{1.1500000000000001`, -0.45}, \
+{1.598, 0.35000000000000003`}]}, 
+     {GrayLevel[1], EdgeForm[{GrayLevel[0], Thickness[0.001]}], 
+      GraphicsGroupBox[{RectangleBox[{1.1, -0.4}, {1.548, 0.4}], InsetBox[
+         GraphicsBox[{{{InsetBox[
+              GraphicsBox[{
+                {Hue[0.6142719099991583, 0.6, 0.6], Thickness[Large], 
+                 LineBox[{{0, 0.5}, {1, 0.5}}]}, InsetBox[
+                 StyleBox["\<\"\[FilledDownTriangle]\"\>",
+                  StripOnInput->False,
+                  LineColor->Hue[0.6142719099991583, 0.6, 0.6],
+                  FrontFaceColor->Hue[0.6142719099991583, 0.6, 0.6],
+                  BackFaceColor->Hue[0.6142719099991583, 0.6, 0.6],
+                  GraphicsColor->Hue[0.6142719099991583, 0.6, 0.6],
+                  Thickness->Large,
+                  FontSize->Large,
+                  FontColor->Hue[0.6142719099991583, 0.6, 0.6]], {0.5, 0.5}]},
+               
+               PlotRange->{{0, 1}, {0, 1}}], {0.08, 0.08}, {
+              Left, Bottom}, {1, 1}], 
+             InsetBox["\<\"Citizen\"\>", {1.2100000000000002`, 0.58}, {-1, 0},
+               Automatic, {1, 0}]}, {InsetBox[
+              GraphicsBox[{
+                {Hue[0.37820393249936846`, 0.6, 0.6], Thickness[Large], 
+                 LineBox[{{0, 0.5}, {1, 0.5}}]}, InsetBox[
+                 StyleBox["\<\"\[FilledUpTriangle]\"\>",
+                  StripOnInput->False,
+                  LineColor->Hue[0.37820393249936846`, 0.6, 0.6],
+                  FrontFaceColor->Hue[0.37820393249936846`, 0.6, 0.6],
+                  BackFaceColor->Hue[0.37820393249936846`, 0.6, 0.6],
+                  GraphicsColor->Hue[0.37820393249936846`, 0.6, 0.6],
+                  Thickness->Large,
+                  FontSize->Large,
+                  
+                  FontColor->Hue[
+                   0.37820393249936846`, 0.6, 0.6]], {0.5, 0.5}]},
+               PlotRange->{{0, 1}, {0, 1}}], {0.08, 1.24}, {
+              Left, Bottom}, {1, 1}], 
+             InsetBox["\<\"Gazette\"\>", {1.2100000000000002`, 1.74}, {-1, 0},
+               Automatic, {1, 0}]}, {InsetBox[
+              GraphicsBox[{
+                {Hue[0.1421359549995791, 0.6, 0.6], Thickness[Large], 
+                 LineBox[{{0, 0.5}, {1, 0.5}}]}, InsetBox[
+                 StyleBox["\<\"\[FilledDiamond]\"\>",
+                  StripOnInput->False,
+                  LineColor->Hue[0.1421359549995791, 0.6, 0.6],
+                  FrontFaceColor->Hue[0.1421359549995791, 0.6, 0.6],
+                  BackFaceColor->Hue[0.1421359549995791, 0.6, 0.6],
+                  GraphicsColor->Hue[0.1421359549995791, 0.6, 0.6],
+                  Thickness->Large,
+                  FontSize->Large,
+                  FontColor->Hue[0.1421359549995791, 0.6, 0.6]], {0.5, 0.5}]},
+               
+               PlotRange->{{0, 1}, {0, 1}}], {0.08, 2.4}, {
+              Left, Bottom}, {1, 1}], 
+             InsetBox["\<\"Telegram\"\>", {1.2100000000000002`, 2.9}, {-1, 0},
+               Automatic, {1, 0}]}, {InsetBox[
+              GraphicsBox[{
+                {Hue[0.9060679774997897, 0.6, 0.6], Thickness[Large], 
+                 LineBox[{{0, 0.5}, {1, 0.5}}]}, InsetBox[
+                 StyleBox["\<\"\[FilledSquare]\"\>",
+                  StripOnInput->False,
+                  LineColor->Hue[0.9060679774997897, 0.6, 0.6],
+                  FrontFaceColor->Hue[0.9060679774997897, 0.6, 0.6],
+                  BackFaceColor->Hue[0.9060679774997897, 0.6, 0.6],
+                  GraphicsColor->Hue[0.9060679774997897, 0.6, 0.6],
+                  Thickness->Large,
+                  FontSize->Large,
+                  FontColor->Hue[0.9060679774997897, 0.6, 0.6]], {0.5, 0.5}]},
+               
+               PlotRange->{{0, 1}, {0, 1}}], {0.08, 3.56}, {
+              Left, Bottom}, {1, 1}], 
+             InsetBox["\<\"Star\"\>", \
+{1.2100000000000002`, 4.0600000000000005`}, {-1, 0}, Automatic, {1, 0}]}, {
+             InsetBox[
+              GraphicsBox[{
+                {Hue[0.67, 0.6, 0.6], Thickness[Large], 
+                 LineBox[{{0, 0.5}, {1, 0.5}}]}, InsetBox[
+                 StyleBox["\<\"\[FilledCircle]\"\>",
+                  StripOnInput->False,
+                  LineColor->Hue[0.67, 0.6, 0.6],
+                  FrontFaceColor->Hue[0.67, 0.6, 0.6],
+                  BackFaceColor->Hue[0.67, 0.6, 0.6],
+                  GraphicsColor->Hue[0.67, 0.6, 0.6],
+                  Thickness->Large,
+                  FontSize->Large,
+                  FontColor->Hue[0.67, 0.6, 0.6]], {0.5, 0.5}]},
+               PlotRange->{{0, 1}, {0, 1}}], {0.08, 4.72}, {
+              Left, Bottom}, {1, 1}], 
+             InsetBox["\<\"Globe\"\>", {1.2100000000000002`, 5.22}, {-1, 0}, 
+              Automatic, {1, 0}]}}, {}},
+          AspectRatio->1.7857142857142856`,
+          FormatType->TraditionalForm,
+          
+          PlotRange->{{-0.1, 3.26}, {-0.1, 
+           5.8999999999999995`}}], {1.1, -0.4}, {
+         Left, Bottom}, {0.44800000000000006`, 0.8}]}]}}], 
+   {Hue[0.67, 0.6, 0.6], EdgeForm[{Hue[0.6699931334401464, 0.6, 0.6], Opacity[
+    1.], AbsoluteThickness[1]}], EdgeForm[None], FaceForm[{GrayLevel[0.], 
+    Opacity[0.2]}], 
+    StyleBox[RectangleBox[{0.2168697307798033, -0.5731368987567673}, {0.9915073072636758, 0.6472823219087307}],
+     RectangleBoxOptions->{RoundingRadius->0}]}, 
+   {Hue[0.67, 0.6, 0.6], EdgeForm[{Hue[0.6699931334401464, 0.6, 0.6], Opacity[
+    1.], AbsoluteThickness[1]}], EdgeForm[None], FaceForm[{GrayLevel[0.], 
+    Opacity[0.1]}], 
+    StyleBox[RectangleBox[{0.2143157204478282, -0.5739659973458813}, {-0.22669275849130469`, 0.6511927154387056}],
+     RectangleBoxOptions->{RoundingRadius->0}]}, 
+   StyleBox[InsetBox[
+     StyleBox[Cell[TextData[{
+       "Impact of ",
+       StyleBox["Pages",
+        FontSlant->"Italic"],
+       "\n",
+       StyleBox["of the Past",
+        FontSlant->"Italic"],
+       " &\n",
+       StyleBox["Canada's\nHeritage\nOnline",
+        FontSlant->"Italic"]
+      }],
+       GeneratedCell->False,
+       CellAutoOverwrite->False,
+       CellBaseline->Baseline,
+       TextAlignment->Left],
+      FontFamily->"Cochin",
+      FontSize->18], {0.25365070199275425`, 0.579127965024673}, {
+     Left, Baseline},
+     Alignment->{Left, Top}],
+    FontColor->GrayLevel[0.],
+    Background->RGBColor[1., 1., 1., 0]], 
+   StyleBox[InsetBox[
+     StyleBox[Cell["\<\
+Gap Between
+Appearance in
+ProQuest
+Dissertations\
+\>",
+       GeneratedCell->False,
+       CellAutoOverwrite->False,
+       CellBaseline->Baseline,
+       TextAlignment->Left],
+      FontFamily->"Cochin",
+      FontSize->18], {-0.20719621829710078`, 0.5705483681043831}, {
+     Left, Baseline},
+     Alignment->{Left, Top}],
+    FontColor->GrayLevel[0.],
+    Background->RGBColor[1., 1., 1., 0]], 
+   StyleBox[InsetBox[
+     StyleBox[Cell[TextData[{
+       "Pre-",
+       StyleBox["Pages of the Past",
+        FontSlant->"Italic"],
+       " and\n",
+       StyleBox["Canada's Heritage Online",
+        FontSlant->"Italic"]
+      }],
+       GeneratedCell->False,
+       CellAutoOverwrite->False,
+       CellBaseline->Baseline,
+       TextAlignment->Left],
+      FontFamily->"Cochin",
+      FontSize->18,
+      Background->GrayLevel[1.]], {-0.9327849864130425, 0.5607431144811944}, {
+     Left, Baseline},
+     Alignment->{Left, Top}],
+    FontColor->GrayLevel[0.]]},
+  AspectRatio->Automatic,
+  Background->None,
+  ColorOutput->Automatic,
+  ImagePadding->{{0., 1.}, {1., 0.}},
+  ImageSize->{1105., Automatic},
+  PlotRange->{{-1.054125, 1.652125}, {-0.6888310473074921, 
+   0.6355081733580059}},
+  PlotRangePadding->Automatic]], "Input",
+ CellChangeTimes->{{3.558280779735365*^9, 3.5582808362943707`*^9}}],
+
+Cell[BoxData[
+ GraphicsBox[{InsetBox[
+    GraphicsBox[GraphicsComplexBox[CompressedData["
+1:eJxTTMoPSmViYGBwA2IQDQYm8x36V/BsOR4Yag/mW8x38PoZ/qH8tjuEbzPf
+4W9GheG9b34QvsN8B4tpR5Vmi6VB+C7zHRj6GW3YPlRA+B7zHSQaBYEoA8L3
+me/AG7yloqW1E8IPmO/A+dRmcpNoLoQfMt/h0cp1G2slJ0D4EfMdbjfuLEtY
+1wvhx8x3OJTnmCP5ZhqEnzDfYXWORdItYah5KfMdZK84AhFUfcZ8h/3bwp4K
+LW6yh/mPARlYoPFt0PgOaHyg/3zFGbUuliTC/YciD/Tf7d0c7deORcH9t3GG
+RtKa5GC4/26Y2zkFlZfC/de77ry/aHwe3H+7uRjTtq5ugPsv/tIdq06vNrj/
+lslFxPYYt9DMfyh8LP5D4Qeg8UPQ+BFo/Bg0fgIaPwWNn4HGJ8J/kPSph5Y+
+3dDSZwQ8/oTACdQQnj4Tlqhv+50bDo8/x7JuXetbnmjpMwEefyjpH2f8pcHj
+z3nh+w01y/Lg8QfRb0a1+DOxZzSw+GxMIH1moaXPZLT0aYrmPze4/0QcGIEo
+Be4/FPOB/jsxV/XNs+0JcP/BpADnDOJV
+      "], {{{}, {}, 
+        {Hue[0.67, 0.6, 0.6], Thickness[Large], 
+         LineBox[{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14}]}, 
+        {Hue[0.9060679774997897, 0.6, 0.6], Thickness[Large], 
+         LineBox[{15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28}]}, 
+        {Hue[0.1421359549995791, 0.6, 0.6], Thickness[Large], 
+         LineBox[{29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42}]}, 
+        {Hue[0.37820393249936934`, 0.6, 0.6], Thickness[Large], 
+         LineBox[{43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56}]}, 
+        {Hue[0.6142719099991583, 0.6, 0.6], Thickness[Large], 
+         LineBox[{57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70}]}}, {
+        {Hue[0.67, 0.6, 0.6], Thickness[Large], InsetBox[
+          StyleBox["\<\"\[FilledCircle]\"\>",
+           StripOnInput->False,
+           FontSize->Large], 1], InsetBox[
+          StyleBox["\<\"\[FilledCircle]\"\>",
+           StripOnInput->False,
+           FontSize->Large], 2], InsetBox[
+          StyleBox["\<\"\[FilledCircle]\"\>",
+           StripOnInput->False,
+           FontSize->Large], 3], InsetBox[
+          StyleBox["\<\"\[FilledCircle]\"\>",
+           StripOnInput->False,
+           FontSize->Large], 4], InsetBox[
+          StyleBox["\<\"\[FilledCircle]\"\>",
+           StripOnInput->False,
+           FontSize->Large], 5], InsetBox[
+          StyleBox["\<\"\[FilledCircle]\"\>",
+           StripOnInput->False,
+           FontSize->Large], 6], InsetBox[
+          StyleBox["\<\"\[FilledCircle]\"\>",
+           StripOnInput->False,
+           FontSize->Large], 7], InsetBox[
+          StyleBox["\<\"\[FilledCircle]\"\>",
+           StripOnInput->False,
+           FontSize->Large], 8], InsetBox[
+          StyleBox["\<\"\[FilledCircle]\"\>",
+           StripOnInput->False,
+           FontSize->Large], 9], InsetBox[
+          StyleBox["\<\"\[FilledCircle]\"\>",
+           StripOnInput->False,
+           FontSize->Large], 10], InsetBox[
+          StyleBox["\<\"\[FilledCircle]\"\>",
+           StripOnInput->False,
+           FontSize->Large], 11], InsetBox[
+          StyleBox["\<\"\[FilledCircle]\"\>",
+           StripOnInput->False,
+           FontSize->Large], 12], InsetBox[
+          StyleBox["\<\"\[FilledCircle]\"\>",
+           StripOnInput->False,
+           FontSize->Large], 13], InsetBox[
+          StyleBox["\<\"\[FilledCircle]\"\>",
+           StripOnInput->False,
+           FontSize->Large], 14]}, 
+        {Hue[0.9060679774997897, 0.6, 0.6], Thickness[Large], InsetBox[
+          StyleBox["\<\"\[FilledSquare]\"\>",
+           StripOnInput->False,
+           FontSize->Large], 15], InsetBox[
+          StyleBox["\<\"\[FilledSquare]\"\>",
+           StripOnInput->False,
+           FontSize->Large], 16], InsetBox[
+          StyleBox["\<\"\[FilledSquare]\"\>",
+           StripOnInput->False,
+           FontSize->Large], 17], InsetBox[
+          StyleBox["\<\"\[FilledSquare]\"\>",
+           StripOnInput->False,
+           FontSize->Large], 18], InsetBox[
+          StyleBox["\<\"\[FilledSquare]\"\>",
+           StripOnInput->False,
+           FontSize->Large], 19], InsetBox[
+          StyleBox["\<\"\[FilledSquare]\"\>",
+           StripOnInput->False,
+           FontSize->Large], 20], InsetBox[
+          StyleBox["\<\"\[FilledSquare]\"\>",
+           StripOnInput->False,
+           FontSize->Large], 21], InsetBox[
+          StyleBox["\<\"\[FilledSquare]\"\>",
+           StripOnInput->False,
+           FontSize->Large], 22], InsetBox[
+          StyleBox["\<\"\[FilledSquare]\"\>",
+           StripOnInput->False,
+           FontSize->Large], 23], InsetBox[
+          StyleBox["\<\"\[FilledSquare]\"\>",
+           StripOnInput->False,
+           FontSize->Large], 24], InsetBox[
+          StyleBox["\<\"\[FilledSquare]\"\>",
+           StripOnInput->False,
+           FontSize->Large], 25], InsetBox[
+          StyleBox["\<\"\[FilledSquare]\"\>",
+           StripOnInput->False,
+           FontSize->Large], 26], InsetBox[
+          StyleBox["\<\"\[FilledSquare]\"\>",
+           StripOnInput->False,
+           FontSize->Large], 27], InsetBox[
+          StyleBox["\<\"\[FilledSquare]\"\>",
+           StripOnInput->False,
+           FontSize->Large], 28]}, 
+        {Hue[0.1421359549995791, 0.6, 0.6], Thickness[Large], InsetBox[
+          StyleBox["\<\"\[FilledDiamond]\"\>",
+           StripOnInput->False,
+           FontSize->Large], 29], InsetBox[
+          StyleBox["\<\"\[FilledDiamond]\"\>",
+           StripOnInput->False,
+           FontSize->Large], 30], InsetBox[
+          StyleBox["\<\"\[FilledDiamond]\"\>",
+           StripOnInput->False,
+           FontSize->Large], 31], InsetBox[
+          StyleBox["\<\"\[FilledDiamond]\"\>",
+           StripOnInput->False,
+           FontSize->Large], 32], InsetBox[
+          StyleBox["\<\"\[FilledDiamond]\"\>",
+           StripOnInput->False,
+           FontSize->Large], 33], InsetBox[
+          StyleBox["\<\"\[FilledDiamond]\"\>",
+           StripOnInput->False,
+           FontSize->Large], 34], InsetBox[
+          StyleBox["\<\"\[FilledDiamond]\"\>",
+           StripOnInput->False,
+           FontSize->Large], 35], InsetBox[
+          StyleBox["\<\"\[FilledDiamond]\"\>",
+           StripOnInput->False,
+           FontSize->Large], 36], InsetBox[
+          StyleBox["\<\"\[FilledDiamond]\"\>",
+           StripOnInput->False,
+           FontSize->Large], 37], InsetBox[
+          StyleBox["\<\"\[FilledDiamond]\"\>",
+           StripOnInput->False,
+           FontSize->Large], 38], InsetBox[
+          StyleBox["\<\"\[FilledDiamond]\"\>",
+           StripOnInput->False,
+           FontSize->Large], 39], InsetBox[
+          StyleBox["\<\"\[FilledDiamond]\"\>",
+           StripOnInput->False,
+           FontSize->Large], 40], InsetBox[
+          StyleBox["\<\"\[FilledDiamond]\"\>",
+           StripOnInput->False,
+           FontSize->Large], 41], InsetBox[
+          StyleBox["\<\"\[FilledDiamond]\"\>",
+           StripOnInput->False,
+           FontSize->Large], 42]}, 
+        {Hue[0.37820393249936934`, 0.6, 0.6], Thickness[Large], InsetBox[
+          StyleBox["\<\"\[FilledUpTriangle]\"\>",
+           StripOnInput->False,
+           FontSize->Large], 43], InsetBox[
+          StyleBox["\<\"\[FilledUpTriangle]\"\>",
+           StripOnInput->False,
+           FontSize->Large], 44], InsetBox[
+          StyleBox["\<\"\[FilledUpTriangle]\"\>",
+           StripOnInput->False,
+           FontSize->Large], 45], InsetBox[
+          StyleBox["\<\"\[FilledUpTriangle]\"\>",
+           StripOnInput->False,
+           FontSize->Large], 46], InsetBox[
+          StyleBox["\<\"\[FilledUpTriangle]\"\>",
+           StripOnInput->False,
+           FontSize->Large], 47], InsetBox[
+          StyleBox["\<\"\[FilledUpTriangle]\"\>",
+           StripOnInput->False,
+           FontSize->Large], 48], InsetBox[
+          StyleBox["\<\"\[FilledUpTriangle]\"\>",
+           StripOnInput->False,
+           FontSize->Large], 49], InsetBox[
+          StyleBox["\<\"\[FilledUpTriangle]\"\>",
+           StripOnInput->False,
+           FontSize->Large], 50], InsetBox[
+          StyleBox["\<\"\[FilledUpTriangle]\"\>",
+           StripOnInput->False,
+           FontSize->Large], 51], InsetBox[
+          StyleBox["\<\"\[FilledUpTriangle]\"\>",
+           StripOnInput->False,
+           FontSize->Large], 52], InsetBox[
+          StyleBox["\<\"\[FilledUpTriangle]\"\>",
+           StripOnInput->False,
+           FontSize->Large], 53], InsetBox[
+          StyleBox["\<\"\[FilledUpTriangle]\"\>",
+           StripOnInput->False,
+           FontSize->Large], 54], InsetBox[
+          StyleBox["\<\"\[FilledUpTriangle]\"\>",
+           StripOnInput->False,
+           FontSize->Large], 55], InsetBox[
+          StyleBox["\<\"\[FilledUpTriangle]\"\>",
+           StripOnInput->False,
+           FontSize->Large], 56]}, 
+        {Hue[0.6142719099991583, 0.6, 0.6], Thickness[Large], InsetBox[
+          StyleBox["\<\"\[FilledDownTriangle]\"\>",
+           StripOnInput->False,
+           FontSize->Large], 57], InsetBox[
+          StyleBox["\<\"\[FilledDownTriangle]\"\>",
+           StripOnInput->False,
+           FontSize->Large], 58], InsetBox[
+          StyleBox["\<\"\[FilledDownTriangle]\"\>",
+           StripOnInput->False,
+           FontSize->Large], 59], InsetBox[
+          StyleBox["\<\"\[FilledDownTriangle]\"\>",
+           StripOnInput->False,
+           FontSize->Large], 60], InsetBox[
+          StyleBox["\<\"\[FilledDownTriangle]\"\>",
+           StripOnInput->False,
+           FontSize->Large], 61], InsetBox[
+          StyleBox["\<\"\[FilledDownTriangle]\"\>",
+           StripOnInput->False,
+           FontSize->Large], 62], InsetBox[
+          StyleBox["\<\"\[FilledDownTriangle]\"\>",
+           StripOnInput->False,
+           FontSize->Large], 63], InsetBox[
+          StyleBox["\<\"\[FilledDownTriangle]\"\>",
+           StripOnInput->False,
+           FontSize->Large], 64], InsetBox[
+          StyleBox["\<\"\[FilledDownTriangle]\"\>",
+           StripOnInput->False,
+           FontSize->Large], 65], InsetBox[
+          StyleBox["\<\"\[FilledDownTriangle]\"\>",
+           StripOnInput->False,
+           FontSize->Large], 66], InsetBox[
+          StyleBox["\<\"\[FilledDownTriangle]\"\>",
+           StripOnInput->False,
+           FontSize->Large], 67], InsetBox[
+          StyleBox["\<\"\[FilledDownTriangle]\"\>",
+           StripOnInput->False,
+           FontSize->Large], 68], InsetBox[
+          StyleBox["\<\"\[FilledDownTriangle]\"\>",
+           StripOnInput->False,
+           FontSize->Large], 69], InsetBox[
+          StyleBox["\<\"\[FilledDownTriangle]\"\>",
+           StripOnInput->False,
+           FontSize->Large], 70]}, {}}}],
+     AspectRatio->NCache[GoldenRatio^(-1), 0.6180339887498948],
+     Axes->True,
+     AxesOrigin->{1997, 0},
+     DisplayFunction:>$DisplayFunction,
+     FormatType->TraditionalForm,
+     PlotRange->{All, All},
+     PlotRangeClipping->True,
+     PlotRangePadding->{Automatic, Automatic}], {-1, -0.6180339887498948}, {
+    Left, Bottom}, {2, 1.2360679774997896`}], GraphicsGroupBox[{
+     {GrayLevel[0], 
+      RectangleBox[{1.1500000000000001`, -0.45}, \
+{1.598, 0.35000000000000003`}]}, 
+     {GrayLevel[1], EdgeForm[{GrayLevel[0], Thickness[0.001]}], 
+      GraphicsGroupBox[{RectangleBox[{1.1, -0.4}, {1.548, 0.4}], InsetBox[
+         GraphicsBox[{{{InsetBox[
+              GraphicsBox[{
+                {Hue[0.6142719099991583, 0.6, 0.6], Thickness[Large], 
+                 LineBox[{{0, 0.5}, {1, 0.5}}]}, InsetBox[
+                 StyleBox["\<\"\[FilledDownTriangle]\"\>",
+                  StripOnInput->False,
+                  LineColor->Hue[0.6142719099991583, 0.6, 0.6],
+                  FrontFaceColor->Hue[0.6142719099991583, 0.6, 0.6],
+                  BackFaceColor->Hue[0.6142719099991583, 0.6, 0.6],
+                  GraphicsColor->Hue[0.6142719099991583, 0.6, 0.6],
+                  Thickness->Large,
+                  FontSize->Large,
+                  FontColor->Hue[0.6142719099991583, 0.6, 0.6]], {0.5, 0.5}]},
+               
+               PlotRange->{{0, 1}, {0, 1}}], {0.08, 0.08}, {
+              Left, Bottom}, {1, 1}], 
+             InsetBox["\<\"Citizen\"\>", {1.2100000000000002`, 0.58}, {-1, 0},
+               Automatic, {1, 0}]}, {InsetBox[
+              GraphicsBox[{
+                {Hue[0.37820393249936846`, 0.6, 0.6], Thickness[Large], 
+                 LineBox[{{0, 0.5}, {1, 0.5}}]}, InsetBox[
+                 StyleBox["\<\"\[FilledUpTriangle]\"\>",
+                  StripOnInput->False,
+                  LineColor->Hue[0.37820393249936846`, 0.6, 0.6],
+                  FrontFaceColor->Hue[0.37820393249936846`, 0.6, 0.6],
+                  BackFaceColor->Hue[0.37820393249936846`, 0.6, 0.6],
+                  GraphicsColor->Hue[0.37820393249936846`, 0.6, 0.6],
+                  Thickness->Large,
+                  FontSize->Large,
+                  
+                  FontColor->Hue[
+                   0.37820393249936846`, 0.6, 0.6]], {0.5, 0.5}]},
+               PlotRange->{{0, 1}, {0, 1}}], {0.08, 1.24}, {
+              Left, Bottom}, {1, 1}], 
+             InsetBox["\<\"Gazette\"\>", {1.2100000000000002`, 1.74}, {-1, 0},
+               Automatic, {1, 0}]}, {InsetBox[
+              GraphicsBox[{
+                {Hue[0.1421359549995791, 0.6, 0.6], Thickness[Large], 
+                 LineBox[{{0, 0.5}, {1, 0.5}}]}, InsetBox[
+                 StyleBox["\<\"\[FilledDiamond]\"\>",
+                  StripOnInput->False,
+                  LineColor->Hue[0.1421359549995791, 0.6, 0.6],
+                  FrontFaceColor->Hue[0.1421359549995791, 0.6, 0.6],
+                  BackFaceColor->Hue[0.1421359549995791, 0.6, 0.6],
+                  GraphicsColor->Hue[0.1421359549995791, 0.6, 0.6],
+                  Thickness->Large,
+                  FontSize->Large,
+                  FontColor->Hue[0.1421359549995791, 0.6, 0.6]], {0.5, 0.5}]},
+               
+               PlotRange->{{0, 1}, {0, 1}}], {0.08, 2.4}, {
+              Left, Bottom}, {1, 1}], 
+             InsetBox["\<\"Telegram\"\>", {1.2100000000000002`, 2.9}, {-1, 0},
+               Automatic, {1, 0}]}, {InsetBox[
+              GraphicsBox[{
+                {Hue[0.9060679774997897, 0.6, 0.6], Thickness[Large], 
+                 LineBox[{{0, 0.5}, {1, 0.5}}]}, InsetBox[
+                 StyleBox["\<\"\[FilledSquare]\"\>",
+                  StripOnInput->False,
+                  LineColor->Hue[0.9060679774997897, 0.6, 0.6],
+                  FrontFaceColor->Hue[0.9060679774997897, 0.6, 0.6],
+                  BackFaceColor->Hue[0.9060679774997897, 0.6, 0.6],
+                  GraphicsColor->Hue[0.9060679774997897, 0.6, 0.6],
+                  Thickness->Large,
+                  FontSize->Large,
+                  FontColor->Hue[0.9060679774997897, 0.6, 0.6]], {0.5, 0.5}]},
+               
+               PlotRange->{{0, 1}, {0, 1}}], {0.08, 3.56}, {
+              Left, Bottom}, {1, 1}], 
+             InsetBox["\<\"Star\"\>", \
+{1.2100000000000002`, 4.0600000000000005`}, {-1, 0}, Automatic, {1, 0}]}, {
+             InsetBox[
+              GraphicsBox[{
+                {Hue[0.67, 0.6, 0.6], Thickness[Large], 
+                 LineBox[{{0, 0.5}, {1, 0.5}}]}, InsetBox[
+                 StyleBox["\<\"\[FilledCircle]\"\>",
+                  StripOnInput->False,
+                  LineColor->Hue[0.67, 0.6, 0.6],
+                  FrontFaceColor->Hue[0.67, 0.6, 0.6],
+                  BackFaceColor->Hue[0.67, 0.6, 0.6],
+                  GraphicsColor->Hue[0.67, 0.6, 0.6],
+                  Thickness->Large,
+                  FontSize->Large,
+                  FontColor->Hue[0.67, 0.6, 0.6]], {0.5, 0.5}]},
+               PlotRange->{{0, 1}, {0, 1}}], {0.08, 4.72}, {
+              Left, Bottom}, {1, 1}], 
+             InsetBox["\<\"Globe\"\>", {1.2100000000000002`, 5.22}, {-1, 0}, 
+              Automatic, {1, 0}]}}, {}},
+          AspectRatio->1.7857142857142856`,
+          FormatType->TraditionalForm,
+          
+          PlotRange->{{-0.1, 3.26}, {-0.1, 
+           5.8999999999999995`}}], {1.1, -0.4}, {
+         Left, Bottom}, {0.44800000000000006`, 0.8}]}]}}], 
+   {Hue[0.67, 0.6, 0.6], EdgeForm[{Hue[0.6699931334401464, 0.6, 0.6], Opacity[
+    1.], AbsoluteThickness[1]}], EdgeForm[None], FaceForm[{GrayLevel[0.], 
+    Opacity[0.2]}], 
+    StyleBox[RectangleBox[{0.21920962084897305`, -0.5746706082138708}, {0.9938471973328458, 0.6457486124516277}],
+     RectangleBoxOptions->{RoundingRadius->0}]}, 
+   {Hue[0.67, 0.6, 0.6], EdgeForm[{Hue[0.6699931334401464, 0.6, 0.6], Opacity[
+    1.], AbsoluteThickness[1]}], EdgeForm[None], FaceForm[{GrayLevel[0.], 
+    Opacity[0.1]}], 
+    StyleBox[RectangleBox[{0.21679980542322097`, -0.578167312568117}, {-0.22420867351591284`, 0.6469914002164712}],
+     RectangleBoxOptions->{RoundingRadius->0}]}, 
+   StyleBox[InsetBox[
+     StyleBox[Cell[TextData[{
+       "Pre-",
+       StyleBox["Pages of the Past",
+        FontSlant->"Italic"],
+       " and\n",
+       StyleBox["Canada's Heritage Online",
+        FontSlant->"Italic"]
+      }],
+       GeneratedCell->False,
+       CellAutoOverwrite->False,
+       CellBaseline->Baseline,
+       TextAlignment->Left],
+      FontFamily->"Cochin",
+      FontSize->18,
+      Background->GrayLevel[1.]], {-0.9154357174688058, 0.5554013486370112}, {
+     Left, Baseline},
+     Alignment->{Left, Top}],
+    FontColor->GrayLevel[0.]], 
+   StyleBox[InsetBox[
+     StyleBox[Cell["\<\
+Gap Between
+Appearance in
+ProQuest
+Dissertations\
+\>",
+       GeneratedCell->False,
+       CellAutoOverwrite->False,
+       CellBaseline->Baseline,
+       TextAlignment->Left],
+      FontFamily->"Cochin",
+      FontSize->18], {-0.19425144830659535`, 0.5578133361592927}, {
+     Left, Baseline},
+     Alignment->{Left, Top}],
+    FontColor->GrayLevel[0.],
+    Background->RGBColor[1., 1., 1., 0]], 
+   StyleBox[InsetBox[
+     StyleBox[Cell[TextData[{
+       "Impact of ",
+       StyleBox["Pages",
+        FontSlant->"Italic"],
+       "\n",
+       StyleBox["of the Past",
+        FontSlant->"Italic"],
+       " &\n",
+       StyleBox["Canada's\nHeritage\nOnline",
+        FontSlant->"Italic"]
+      }],
+       GeneratedCell->False,
+       CellAutoOverwrite->False,
+       CellBaseline->Baseline,
+       TextAlignment->Left],
+      FontFamily->"Cochin",
+      FontSize->18], {0.23990630570409988`, 0.5855511926655315}, {
+     Left, Baseline},
+     Alignment->{Left, Top}],
+    FontColor->GrayLevel[0.],
+    Background->RGBColor[1., 1., 1., 0]]},
+  AspectRatio->Automatic,
+  Background->None,
+  ColorOutput->Automatic,
+  ImagePadding->{{0., 1.}, {1., 0.}},
+  ImageSize->{1123., Automatic},
+  PlotRange->{{-1.054125, 1.652125}, {-0.6893422837931937, 
+   0.6349969368723049}},
+  PlotRangePadding->Automatic]], "Input",
+ CellChangeTimes->{{3.5582808715688057`*^9, 3.558280912339849*^9}}]
+},
+WindowSize->{1136, 819},
+WindowMargins->{{164, Automatic}, {Automatic, 0}},
+FrontEndVersion->"9.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (November 20, \
+2012)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[557, 20, 202, 4, 98, "Text"],
+Cell[CellGroupData[{
+Cell[784, 28, 136, 2, 28, "Input"],
+Cell[923, 32, 579, 17, 48, "Output"]
+}, Open  ]],
+Cell[1517, 52, 3297, 96, 420, "Input"],
+Cell[4817, 150, 348, 8, 28, "Input"],
+Cell[5168, 160, 886, 22, 97, "Input"],
+Cell[6057, 184, 204, 5, 28, "Input"],
+Cell[6264, 191, 1128, 33, 97, "Input"],
+Cell[7395, 226, 1155, 33, 97, "Input"],
+Cell[8553, 261, 718, 17, 46, "Input"],
+Cell[9274, 280, 161, 3, 28, "Input"],
+Cell[9438, 285, 1935, 39, 63, "Input"],
+Cell[11376, 326, 18632, 425, 556, "Input"],
+Cell[30011, 753, 18469, 422, 565, "Input"]
+}
+]
+*)
+
+(* End of internal cache information *)
