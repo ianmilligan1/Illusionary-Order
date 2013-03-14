@@ -10,26 +10,26 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       157,          7]
-NotebookDataLength[     27266,        704]
-NotebookOptionsPosition[     25940,        657]
-NotebookOutlinePosition[     26297,        673]
-CellTagsIndexPosition[     26254,        670]
+NotebookDataLength[     27838,        718]
+NotebookOptionsPosition[     26472,        670]
+NotebookOutlinePosition[     26831,        686]
+CellTagsIndexPosition[     26788,        683]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
 Notebook[{
 Cell[TextData[{
  StyleBox["Analyzing Subsequent Yearly Datasets (2001)\n", "Title"],
- StyleBox["Ian Milligan - 6 May 2012", "Subtitle"]
+ StyleBox["Ian Milligan -  2012", "Subtitle"]
 }], "Text",
  CellFrame->{{0, 0}, {3, 0}},
  CellChangeTimes->{{3.5421915653843927`*^9, 3.5421915711918497`*^9}, {
-  3.542196944625925*^9, 3.542196945618063*^9}, {3.542285372460969*^9, 
-  3.542285392378511*^9}, {3.544140122854683*^9, 3.544140129773677*^9}, {
-  3.5441705872108994`*^9, 3.544170587261106*^9}, {3.5443770493172607`*^9, 
-  3.544377052998406*^9}, {3.544699467706357*^9, 3.54469948498416*^9}, {
-  3.545035848571885*^9, 3.545035865479143*^9}, {3.545307116698454*^9, 
-  3.545307119114194*^9}}],
+   3.542196944625925*^9, 3.542196945618063*^9}, {3.542285372460969*^9, 
+   3.542285392378511*^9}, {3.544140122854683*^9, 3.544140129773677*^9}, {
+   3.5441705872108994`*^9, 3.544170587261106*^9}, {3.5443770493172607`*^9, 
+   3.544377052998406*^9}, {3.544699467706357*^9, 3.54469948498416*^9}, {
+   3.545035848571885*^9, 3.545035865479143*^9}, {3.545307116698454*^9, 
+   3.545307119114194*^9}, 3.572271506561943*^9}],
 
 Cell[CellGroupData[{
 
@@ -98,6 +98,11 @@ Cell[BoxData[
   3.545307147158757*^9}]
 }, Open  ]],
 
+Cell[BoxData[
+ RowBox[{"(*", " ", 
+  RowBox[{"generates", " ", "bigrams"}], " ", "*)"}]], "Input",
+ CellChangeTimes->{{3.5722715196704073`*^9, 3.572271521521551*^9}}],
+
 Cell[CellGroupData[{
 
 Cell[BoxData[{
@@ -141,8 +146,10 @@ Analysis/2001/\>\"", "<>",
       RowBox[{"bigrams", ",", "exportString"}], "]"}], ";"}], 
     "\[IndentingNewLine]", ",", 
     RowBox[{"{", 
-     RowBox[{"file", ",", "filelist"}], "}"}]}], "]"}], 
-  "\n"}], "\[IndentingNewLine]", 
+     RowBox[{"file", ",", "filelist"}], "}"}]}], "]"}], "\n", 
+  RowBox[{"(*", " ", 
+   RowBox[{"generates", " ", "trigrams"}], " ", 
+   "*)"}]}], "\[IndentingNewLine]", 
  RowBox[{"Do", "[", "\[IndentingNewLine]", 
   RowBox[{
    RowBox[{
@@ -192,6 +199,11 @@ Analysis/2001/\>\"", "<>",
   RowBox[{
    RowBox[{"filelist", "=", 
     RowBox[{"FileNames", "[", "\"\<*trigrams.txt\>\"", "]"}]}], ";"}], 
+  "\[IndentingNewLine]", "\[IndentingNewLine]", 
+  RowBox[{"(*", 
+   RowBox[{
+   "begins", " ", "to", " ", "count", " ", "using", " ", "bigram", " ", "and",
+     " ", "trigram", " ", "database"}], " ", "*)"}], 
   "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{"globeCounter01", "=", 
@@ -232,7 +244,7 @@ Analysis/2001/\>\"", "<>",
      "\[IndentingNewLine]", ",", 
      RowBox[{"{", 
       RowBox[{"file", ",", "filelist"}], "}"}]}], "]"}], ";"}], 
-  "\n"}], "\[IndentingNewLine]", 
+  "\[IndentingNewLine]"}], "\n", 
  RowBox[{
   RowBox[{"Print", "[", 
    RowBox[{
@@ -264,7 +276,7 @@ Analysis/2001/\>\"", "<>",
      RowBox[{"ToString", "[", 
       RowBox[{"Total", "[", "numberCases01", "]"}], "]"}], "<>", 
      "\"\<: total citation counts for 2001, Globe and Mail.\>\""}], "]"}], 
-   ";"}], "\n"}], "\[IndentingNewLine]", 
+   ";"}], "\[IndentingNewLine]"}], "\n", 
  RowBox[{
   RowBox[{
   "SetDirectory", "[", 
@@ -335,7 +347,7 @@ Analysis/2001/\>\"", "<>",
      RowBox[{"ToString", "[", 
       RowBox[{"Total", "[", "numberStarCases01", "]"}], "]"}], "<>", 
      "\"\<: total citation counts for 2001, Toronto Star.\>\""}], "]"}], 
-   ";"}], "\n"}], "\[IndentingNewLine]", 
+   ";"}], "\[IndentingNewLine]"}], "\n", 
  RowBox[{
   RowBox[{
   "SetDirectory", "[", 
@@ -558,7 +570,8 @@ Analysis/2001/\>\"", "<>",
    3.54228541097893*^9}, {3.544140138641481*^9, 3.544140161458498*^9}, {
    3.544377096150361*^9, 3.5443771121290703`*^9}, {3.544699467775384*^9, 
    3.5446994767330503`*^9}, {3.545035847220294*^9, 3.545035858048154*^9}, {
-   3.545307136433248*^9, 3.5453071420150948`*^9}}],
+   3.545307136433248*^9, 3.5453071420150948`*^9}, {3.572271523666831*^9, 
+   3.57227153549529*^9}}],
 
 Cell[CellGroupData[{
 
@@ -657,8 +670,8 @@ Cell[BoxData[""], "Input",
 },
 WindowSize->{827, 1171},
 WindowMargins->{{306, Automatic}, {Automatic, 51}},
-FrontEndVersion->"8.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (October 5, \
-2011)",
+FrontEndVersion->"9.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (November 20, \
+2012)",
 StyleDefinitions->"Default.nb"
 ]
 (* End of Notebook Content *)
@@ -672,40 +685,41 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[557, 20, 636, 11, 135, "Text"],
+Cell[557, 20, 659, 11, 165, "Text"],
 Cell[CellGroupData[{
-Cell[1218, 35, 1375, 30, 103, "Input"],
-Cell[2596, 67, 2055, 30, 118, "Output"]
+Cell[1241, 35, 1375, 30, 114, "Input"],
+Cell[2619, 67, 2055, 30, 131, "Output"]
 }, Open  ]],
+Cell[4689, 100, 166, 3, 28, "Input"],
 Cell[CellGroupData[{
-Cell[4688, 102, 17458, 458, 1693, "Input"],
+Cell[4880, 107, 17798, 466, 2052, "Input"],
 Cell[CellGroupData[{
-Cell[22171, 564, 135, 1, 20, "Print"],
-Cell[22309, 567, 159, 2, 20, "Print"],
-Cell[22471, 571, 154, 2, 20, "Print"],
-Cell[22628, 575, 135, 1, 20, "Print"],
-Cell[22766, 578, 158, 2, 20, "Print"],
-Cell[22927, 582, 152, 2, 20, "Print"],
-Cell[23082, 586, 136, 1, 20, "Print"],
-Cell[23221, 589, 163, 2, 20, "Print"],
-Cell[23387, 593, 155, 2, 20, "Print"],
-Cell[23545, 597, 136, 1, 20, "Print"],
-Cell[23684, 600, 161, 2, 20, "Print"],
-Cell[23848, 604, 156, 2, 20, "Print"],
-Cell[24007, 608, 136, 1, 20, "Print"],
-Cell[24146, 611, 163, 2, 20, "Print"],
-Cell[24312, 615, 155, 2, 20, "Print"]
+Cell[22703, 577, 135, 1, 21, "Print"],
+Cell[22841, 580, 159, 2, 21, "Print"],
+Cell[23003, 584, 154, 2, 21, "Print"],
+Cell[23160, 588, 135, 1, 21, "Print"],
+Cell[23298, 591, 158, 2, 21, "Print"],
+Cell[23459, 595, 152, 2, 21, "Print"],
+Cell[23614, 599, 136, 1, 21, "Print"],
+Cell[23753, 602, 163, 2, 22, "Print"],
+Cell[23919, 606, 155, 2, 22, "Print"],
+Cell[24077, 610, 136, 1, 21, "Print"],
+Cell[24216, 613, 161, 2, 21, "Print"],
+Cell[24380, 617, 156, 2, 21, "Print"],
+Cell[24539, 621, 136, 1, 21, "Print"],
+Cell[24678, 624, 163, 2, 21, "Print"],
+Cell[24844, 628, 155, 2, 21, "Print"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[24516, 623, 107, 1, 27, "Input"],
-Cell[24626, 626, 876, 14, 43, "Output"]
+Cell[25048, 636, 107, 1, 28, "Input"],
+Cell[25158, 639, 876, 14, 63, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[25539, 645, 175, 3, 27, "Input"],
-Cell[25717, 650, 112, 1, 27, "Output"]
+Cell[26071, 658, 175, 3, 28, "Input"],
+Cell[26249, 663, 112, 1, 28, "Output"]
 }, Open  ]],
-Cell[25844, 654, 92, 1, 27, "Input"]
+Cell[26376, 667, 92, 1, 28, "Input"]
 }
 ]
 *)
