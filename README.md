@@ -7,5 +7,7 @@ It is messy, but functional code.
 If you have any questions or comments, please feel free to e-mail me at i2milligan@uwaterloo.ca.
 
 Ian Milligan 
+
 Department of History 
+
 University of Waterloo 
